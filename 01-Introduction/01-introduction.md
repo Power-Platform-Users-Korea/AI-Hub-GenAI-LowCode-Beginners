@@ -1,14 +1,8 @@
-# 시작하기
-## GenAI
-### GenAI 현재
-현재 GenAI는  
-**Copilot**은 [마이크로소프트](https://microsoft.com/)가 제공하는 **대화형 GenAI**로서 ```openapi.seoul.go.kr```로 가서
-1. MS365 Copilot
-2. Power Platform Copilot
-   - 이것은
-   - 저것은
-3. Copilot Studio
-
-
-
-
+# 생성형 인공지능(GenAI, Generative AI) 등장
+## GenAI 등장과 변화
+1. 기존 교육 방식
+2. GenAI 등장 이후 교육 방식
+## GPT-4o 등장
+1. GPT-40
+2. 위기는 기회
+## 창업 환경의 변화와 적응
