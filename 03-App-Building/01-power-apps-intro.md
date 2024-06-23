@@ -37,7 +37,7 @@
 
 이 모듈에서는 Power Automate에서 Copilot을 사용하여 흐름을 생성하는 방법을 다룹니다. Copilot을 사용하여 흐름을 개선하는 방법과 예시 AI 기능을 통해 형식을 사용하는 방법을 알아보세요. Power Automate의 Copilot은 지루한 작업을 자동화하고 시간을 절약하는데 도움이 됩니다. 사용자 친화적이며 워크플로우를 더 빠르고 효율적으로 생성하는데 도움이 됩니다.
 
-​- 소개 : 2분
+- 소개 : 2분
 - 연습 - Power Automate에서 Copilot을 사용하여 승인 흐름 만들기 : 16분
 - Power Automate에서 Copilot을 사용하는 경우 : 1분
 
@@ -46,7 +46,7 @@
 
 이 모듈에서는 Microsoft Copilot Studio를 사용하여 코파일럿을 만드는 방법을 설명합니다. Copilot Studio는 자연어를 사용하여 코파일럿을 만드는데 사용할 수 있는 새로운 기능입니다. GPT-3의 강력한 기능을 사용하여 코파일럿을 위한 주제, 트리거 문구 및 응답을 생성합니다. 또한 이 모듈에서는 Conversation Booster 기능을 사용하여 코파일럿 응답을 개선하는 방법을 간략하게 설명합니다.
 
-​- 소개 : 2분
+- 소개 : 2분
 - 연습 - 새로운 AI 기능을 사용하여 Microsoft Copilot Studio에서 봇 구축 : 25분
 
 ## 05. AI Builder 및 GPT로 인텔리전스 추가
@@ -54,6 +54,6 @@
 
 이 모듈에서는 AI Builder에서 GPT 기능을 사용하여 텍스트 만들기를 소개하고, Power Automate에서 지침을 작성하고 모델을 사용하는 방법을 간략하게 설명합니다.
 
-​- 소개 : 1분
+- 소개 : 1분
 - AI Builder에서 GPT 모델을 사용하여 텍스트 만들기 소개 : 2분
 - 연습 - AI Builder 및 Power Automate에서 GPT를 사용하여 텍스트 생성 : 10분
