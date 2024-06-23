@@ -42,7 +42,7 @@
 - Power Automate에서 Copilot을 사용하는 경우 : 1분
 
 ## 04. Microsoft Copilot Studio를 사용하여 코파일럿 만들기
-34분, 모듈, 개
+34분, 모듈, 2개
 
 이 모듈에서는 Microsoft Copilot Studio를 사용하여 코파일럿을 만드는 방법을 설명합니다. Copilot Studio는 자연어를 사용하여 코파일럿을 만드는데 사용할 수 있는 새로운 기능입니다. GPT-3의 강력한 기능을 사용하여 코파일럿을 위한 주제, 트리거 문구 및 응답을 생성합니다. 또한 이 모듈에서는 Conversation Booster 기능을 사용하여 코파일럿 응답을 개선하는 방법을 간략하게 설명합니다.
 
