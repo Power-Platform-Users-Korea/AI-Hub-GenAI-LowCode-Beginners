@@ -12,7 +12,7 @@
 ## 전제조건
 이러한 연습을 완료하려면, 라이선스가 부여된 사용자가 있는 Power Apps 개발자 환경(미국 지역 기반)이 필요합니다.
 
-## 01. Excel의 데이터를 사용하여 부동산 솔루션용 Power Apps 캔버스 앱 구축
+## 02. Excel의 데이터를 사용하여 부동산 솔루션용 Power Apps 캔버스 앱 구축
 40분, 모듈, 2개
 
 중요
@@ -24,7 +24,7 @@
 - 소개 : 2분
 - 연습 – Excel 파일의 데이터로 캔버스 앱 만들기 : 30분
 
-## 02. Power Apps에서 Copilot을 사용하여 부동산 솔루션용 캔버스 앱 구축
+## 03. Power Apps에서 Copilot을 사용하여 부동산 솔루션용 캔버스 앱 구축
 35분, 모듈, 2개
 
 이 모듈에서는 AI를 탐색하여 데이터 테이블을 생성하고 Copilot 도구를 사용하여 Power Apps 내에서 새 앱을 만듭니다.
@@ -32,7 +32,7 @@
 - 소개 : 2분
 - 연습 – Power Apps에서 Copilot을 사용하여 캔버스 앱 만들기 : 5분
 
-## 03. Power Automate에서 Copilot을 사용하여 부동산 솔루션에 대한 흐름 구축
+## 04. Power Automate에서 Copilot을 사용하여 부동산 솔루션에 대한 흐름 구축
 25분, 모듈, 3개
 
 이 모듈에서는 Power Automate에서 Copilot을 사용하여 흐름을 생성하는 방법을 다룹니다. Copilot을 사용하여 흐름을 개선하는 방법과 예시 AI 기능을 통해 형식을 사용하는 방법을 알아보세요. Power Automate의 Copilot은 지루한 작업을 자동화하고 시간을 절약하는데 도움이 됩니다. 사용자 친화적이며 워크플로우를 더 빠르고 효율적으로 생성하는데 도움이 됩니다.
@@ -41,7 +41,7 @@
 - 연습 - Power Automate에서 Copilot을 사용하여 승인 흐름 만들기 : 16분
 - Power Automate에서 Copilot을 사용하는 경우 : 1분
 
-## 04. Microsoft Copilot Studio를 사용하여 코파일럿 만들기
+## 05. Microsoft Copilot Studio를 사용하여 코파일럿 만들기
 34분, 모듈, 개
 
 이 모듈에서는 Microsoft Copilot Studio를 사용하여 코파일럿을 만드는 방법을 설명합니다. Copilot Studio는 자연어를 사용하여 코파일럿을 만드는데 사용할 수 있는 새로운 기능입니다. GPT-3의 강력한 기능을 사용하여 코파일럿을 위한 주제, 트리거 문구 및 응답을 생성합니다. 또한 이 모듈에서는 Conversation Booster 기능을 사용하여 코파일럿 응답을 개선하는 방법을 간략하게 설명합니다.
@@ -49,7 +49,7 @@
 - 소개 : 2분
 - 연습 - 새로운 AI 기능을 사용하여 Microsoft Copilot Studio에서 봇 구축 : 25분
 
-## 05. AI Builder 및 GPT로 인텔리전스 추가
+## 06. AI Builder 및 GPT로 인텔리전스 추가
 20분, 모듈, 3개
 
 이 모듈에서는 AI Builder에서 GPT 기능을 사용하여 텍스트 만들기를 소개하고, Power Automate에서 지침을 작성하고 모델을 사용하는 방법을 간략하게 설명합니다.
