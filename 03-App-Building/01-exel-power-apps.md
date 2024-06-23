@@ -23,7 +23,7 @@ Excel 파일을 업로드하면 Microsoft Dataverse 테이블이 생성됩니다
 이 연습에서는 Excel 테이블의 데이터를 사용하여 모바일 애플리케이션을 만듭니다. 이 연습에 사용할 RealEstateProperties.xlsx를 다운로드하세요.
 
 
-- 참고
+참고   
 Microsoft Power Apps에는 Microsoft 365 라이선스 또는 무료 평가판이 필요합니다. 라이선스 옵션에 대해 자세히 알아보세요. Microsoft 제품에는 Power Apps 및 Power Automate가 포함됩니다.
 
 1. make.powerapps.com 으로 이동하여, Power Apps 자격 증명으로 로그인합니다.
