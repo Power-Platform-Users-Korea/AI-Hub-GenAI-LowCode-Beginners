@@ -1,1 +1,1 @@
-# AI-Hub-GenAI-LawCode-Beginner
+# AI-Hub-GenAI-LowCode-Beginner
