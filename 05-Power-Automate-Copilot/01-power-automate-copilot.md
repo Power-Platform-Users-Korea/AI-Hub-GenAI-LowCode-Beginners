@@ -157,10 +157,10 @@ Add "Good day - Your request for a real estate showing has been approved. Please
 
 34. 본문 텍스트 뒤에 다음 내용을 입력합니다 .
 
-주소:\n
-Agent 이름:\n
-표시 날짜:\n
-표시 시간:\n
+주소:   
+Agent 이름:   
+표시 날짜:   
+표시 시간:   
 
 동적 콘텐츠 창의 주소 , Agent 이름 , 날짜 및 시간 필드를 본문 텍스트 의 해당 줄에 추가합니다 .
 
@@ -174,6 +174,7 @@ Agent 이름:\n
 ​38. 제목 필드 의 경우 Copilot 채팅 창에 다음 내용을 입력한 후 키보드의 Enter 키를 누릅니다.
 
 ​이메일 보내기 작업의 제목 매개변수로 "부동산 표시 요청이 거부되었습니다"를 추가하세요.
+
 Add "Your request for a real estate showing has been rejected" as the Subject parameter for the Send an email action
 
 Copilot은 요청한 내용을 항상 이해하지 못하므로 기대한 내용을 항상 정확하게 얻지 못할 수도 있으므로 "실행 취소"를 선택하거나 수동으로 흐름에 추가할 수 있습니다. Copilot은 사용자를 지원하도록 설계된 공동 작업 도구이지만, Copilot은 사용자가 지시한 내용을 항상 올바르게 해석하지 못할 수도 있습니다.
@@ -181,16 +182,17 @@ Copilot은 요청한 내용을 항상 이해하지 못하므로 기대한 내용
 39. 본문 필드 의 경우 Copilot 채팅 창에 다음 텍스트를 입력한 후 키보드의 Enter 키를 누릅니다.
 
 ​이메일 보내기 작업의 본문 매개변수로 "안녕하세요 - 부동산 공개 요청이 거부되었습니다. 자세한 내용은 아래를 참조하세요."를 추가하세요.
+
 Add "Good day - Your request for a real estate showing has been rejected. Please see below for details." as the Body parameter for the Send an email action
 
 어떤 이유로 Copilot이 이를 놓친 경우 실행 취소하고 다시 시도하거나 수동으로 조정할 수 있습니다.
 
 40. 본문 텍스트 뒤에 다음 내용을 입력합니다 .
 
-주소:
-Agent 이름:
-표시 날짜:
-표시 시간:
+주소:   
+Agent 이름:   
+표시 날짜:   
+표시 시간:   
 
 동적 콘텐츠 창의 주소 , Agent 이름 , 날짜 및 시간 필드를 본문 텍스트 의 해당 줄에 추가합니다 .
 
@@ -209,13 +211,13 @@ Agent 이름:
 ​
 47. 다음 정보로 필드를 채우십시오.
 
-​Agent 이름 - < random name >
-고객 성명 - < Your name >
-클라이언트 이메일 - < Your email >(이 실습에 사용하는 이메일)
-날짜 - < Any future date >
-시간 - < Any future time >
-상태 - 보류 중
-주소 - 210 Pine Road, Portland, OR 97204
+​Agent 이름 - < random name >   
+고객 성명 - < Your name >   
+클라이언트 이메일 - < Your email >(이 실습에 사용하는 이메일)   
+날짜 - < Any future date >   
+시간 - < Any future time >   
+상태 - 보류 중   
+주소 - 210 Pine Road, Portland, OR 97204   
 
 참고   
 이 주소는 모듈 1의 Microsoft Excel 파일에 있는 주소 중 하나입니다. 이는 귀하가 업로드하여 부동산 주소 테이블 로 전환한 것과 동일한 파일입니다 .
