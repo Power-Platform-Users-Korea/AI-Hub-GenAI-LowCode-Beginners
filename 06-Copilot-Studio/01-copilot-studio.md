@@ -28,6 +28,8 @@
 
 2. 왼쪽 탐색 메뉴에서 홈을 선택한 다음 + 코파일럿 생성을 선택합니다 .
 
+![Copilot Studio](Images/copilot-studio-02.png)
+
 코파일럿 생성 마법사가 열립니다. 이 마법사는 이름을 지정하고, 언어를 선택하고, 선택적으로 생성적인 답변으로 대화를 강화할지 여부를 선택하여 코파일럿을 설정하는데 도움을 줍니다.
 
 3. 코파일럿의 이름을 Real Estate Booking Service 로 지정한 다음 English를 선택하세요 .
@@ -35,11 +37,15 @@
 ```
 Real Estate Booking Service
 ```
+![Copilot Studio](Images/copilot-studio-03.png)
+
 생성적 답변으로 대화 강화 옵션도 표시되어야 합니다.
 
 Generative AI 창을 설정하여 코파일럿에게 지식을 제공합니다.
 
 이 페이지에서는 즐겨찾는 부동산 웹사이트를 작성할 수 있습니다. 따라서 코파일럿을 생성한 후 코파일럿이 질문에 답변할 수 없는 경우 답변을 제공한 웹 사이트를 검색합니다. 이 접근 방식은 수동으로 주제를 생성할 필요 없이 여러 질문에 답할 수 있는 코파일럿을 빠르게 생성할 수 있는 좋은 방법입니다.
+
+![Copilot Studio](Images/copilot-studio-03-2.png)
 
 ​예를 들어 다음 이미지와 같이 웹사이트( https://powerplatform.microsoft.com/ )를 제공합니다.
 
@@ -49,10 +55,14 @@ Generative AI 창을 설정하여 코파일럿에게 지식을 제공합니다.
 
 ​4. 코파일럿 이름과 언어가 설정된 상태에서 만들기를 선택합니다 .
 
+![Copilot Studio](Images/copilot-studio-04.png)
+
 > 참고    
 > 생성을 선택한 후 새 환경 내에서 첫 번째 코파일럿을 생성하는 프로세스는 최대 15분이 걸릴 수 있습니다. 후속 코파일럿은 훨씬 빠르게 생성됩니다.
 
 ​5. 코파일럿이 생성되면 왼쪽 탐색 메뉴에서 주제를 선택한 다음 생성 드롭다운 메뉴를 선택합니다.  주제 > Copilot을 사용하여 설명에서 만들기로 이동해서 선택합니다 .
+
+![Copilot Studio](Images/copilot-studio-05.png)
 
 > 참고    
 > Copilot으로 만들기 옵션이 표시되지 않으면 지능형 작성 지원을 활성화해야 할 수도 있습니다.
@@ -61,14 +71,19 @@ Generative AI 창을 설정하여 코파일럿에게 지식을 제공합니다.
 
 6. 주제 이름을 지정 하고 주제 만들기... 공간 에 설명을 제공하라는 새 창이 나타납니다.
 
+![Copilot Studio](Images/copilot-studio-06.png)
+
 7. 주제 이름 지정 필드 에 다음 텍스트를 입력합니다.
 
 ```
 Book a Real Estate Showing
 ```
 
-+ 부동산 쇼룸 예약하기
+```
+부동산 쇼룸 예약하기
+```
 
+![Copilot Studio](Images/copilot-studio-07.png)
 
 8. 주제 만들기... 필드에 다음 텍스트를 입력합니다.
 
@@ -76,27 +91,40 @@ Book a Real Estate Showing
 collect a user's full name, email, address of the property, and date and time of the showing
 ```
 
-+ 사용자의 성명, 이메일, 숙소 주소, 예약 날짜 및 시간을 수집합니다.
+```
+사용자의 성명, 이메일, 부동산 주소, 예약 날짜 및 시간을 수집합니다.
+```
 
+![Copilot Studio](Images/copilot-studio-08.png)
 ​
 만들기 를 선택합니다 .
 
 생성된 트리거 문구와 함께 새 주제가 표시됩니다.
+
+![Copilot Studio](Images/copilot-studio-08-2.png)
 
 > 참고   
 > 생성된 콘텐츠는 이 실습에 표시된 것과 다르게 나타날 수 있다는 점을 기억합니다.
 
 ​여러 질문 노드, 엔터티 선택 및 변수 이름 지정도 표시되어야 합니다.
 
+![Copilot Studio](Images/copilot-studio-08-3.png)
+
 9. 이메일 주소가 무엇입니까? 질문 노드 를 찾아 선택합니다.
 
+![Copilot Studio](Images/copilot-studio-09.png)
+
 10. 제작 캔버스 상단에 있는 Copilot으로 편집 아이콘을 선택합니다 .
+
+![Copilot Studio](Images/copilot-studio-10.png)
 
 11. Copilot으로 편집 패널 의 무엇을 하시겠습니까? 필드에 다음 텍스트를 입력합니다.
 
 ```
 ​update the Email Question to say thank you to the Name variable from the previous node and then proceed to ask the question
 ```
+
+![Copilot Studio](Images/copilot-studio-11.png)
 
 ```
 ​update the message to say thank you to the Name variable from the previous node and then proceed to ask the question
@@ -108,6 +136,8 @@ collect a user's full name, email, address of the property, and date and time of
 
 메시지는 이전 메시지 노드의 이름 변수를 포함하도록 업데이트되어야 합니다.
 
+![Copilot Studio](Images/copilot-studio-11-2.png)
+
 새 노드를 추가하는 것 외에도 Copilot을 사용하여 기존 노드를 업데이트할 수 있습니다.
 
 ​12. 노드 주위의 빈 공간을 클릭하여 노드가 선택되지 않았는지 확인하십시오. Copilot으로 편집 패널 의 무엇을 하시겠습니까? 필드에 다음 텍스트를 입력합니다.
@@ -116,15 +146,21 @@ collect a user's full name, email, address of the property, and date and time of
 summarize the information collected in an adaptive card
 ```
 
+![Copilot Studio](Images/copilot-studio-12.png)
+
 ​+ 적응형 카드에 수집된 정보를 요약합니다.
 
 업데이트를 선택합니다.
 
 적응형 카드가 있는 메시지 노드가 항목 끝에 추가됩니다.
 
+![Copilot Studio](Images/copilot-studio-12-2.png)
+
 13. 적응형 카드를 선택합니다. 적응형 카드 속성이 화면 오른쪽에 나타나야 합니다.
 
 적응형 카드 수식은 위와 유사해야 합니다. 그렇지 않은 경우 아래 수식을 복사하여 붙여 넣을 수 있습니다.
+
+![Copilot Studio](Images/copilot-studio-13.png)
 
 ```
 {
@@ -176,15 +212,23 @@ add a multiple choice question to confirm if the user's information is correct w
 
 + 객관식 질문을 추가하여 예 또는 아니오를 선택할 수 있는 옵션으로 사용자 정보가 정확한지 확인합니다.​
 
+![Copilot Studio](Images/copilot-studio-14.png)
+
 업데이트를 선택합니다 .
 
 사용자가 선택할 수 있는 옵션이 포함된 새 질문 노드가 항목 끝에 추가됩니다.
 
 15. 작성 캔버스의 왼쪽 상단에서 주제 이름을 Book Real Estate Showing Topic 으로 바꿉니다.
 
+![Copilot Studio](Images/copilot-studio-15.png)
+
 16. 저장을 선택하여 변경 사항을 저장합니다.
+
+![Copilot Studio](Images/copilot-studio-16.png)
 ​
 17. 화면 왼쪽 하단에 있는 코파일럿 테스트 버튼을 선택하여 테스트 패널을 엽니다.
+
+![Copilot Studio](Images/copilot-studio-17.png)
 
 ​18. 대화 시작 메시지가 나타나면 코파일럿이 대화를 시작합니다. 이에 대한 응답으로 생성한 주제에 대한 트리거 문구를 입력하세요.
 
@@ -192,9 +236,13 @@ add a multiple choice question to confirm if the user's information is correct w
 I want to book a real estate showing
 ```
 
-+ ​부동산 쇼룸를 예약하고 싶습니다.
+```
+​부동산 쇼룸를 예약하고 싶습니다.
+```
 
 코파일럿은 "당신의 이름은 무엇입니까?"라고 대답합니다. 질문은 다음 이미지와 같습니다.
+
+![Copilot Studio](Images/copilot-studio-18.png)
 
 19. 나머지 정보를 입력하세요.
 
@@ -205,6 +253,10 @@ Address: 555 Oak Lane, Denver, CO 80203
 Date and Time: 10/10/2023 10:00 AM   
 ```
 
+![Copilot Studio](Images/copilot-studio-19.png)
+
 20. 정보를 입력하면 다음 이미지와 같이 적응형 카드에 입력한 정보, 정보가 올바른지 묻는 질문, 예 또는 아니요 선택 옵션이 표시됩니다.
+
+![Copilot Studio](Images/copilot-studio-20.png)
 
 옵션을 선택한 후 Microsoft Power Automate 흐름을 통해 또는 사용자가 입력한 정보가 포함된 이메일을 사용자에게 보내 Dataverse에 데이터를 저장하는 주제를 추가로 개발할 수 있습니다. 그러나 이러한 작업은 이 모듈의 범위를 벗어납니다.
