@@ -146,15 +146,24 @@ Extract "Name", "Address", "Date", and "Time" from the text below. When the text
 
 15. 새 단계를 선택한 다음 승인을 검색하여 선택합니다 .
 
+![AI Builder](Image/ai-builder-13.png)
+
 ​16. 작업 목록에서 시작 및 텍스트 승인 대기를 선택합니다 .
+
+![AI Builder](Image/ai-builder-14.png)
 
 ​17. 제목 상자 에 추출된 정보 검토 를 입력합니다 .
 
+![AI Builder](Image/ai-builder-15.png)
+
 18. 제안된 텍스트 상자 에서 GPT로 텍스트 만들기 작업의 텍스트 동적 콘텐츠를 추가합니다 .
+
+![AI Builder](Image/ai-builder-16.png)
 
 19. 할당 대상 상자 에 이 실습에 사용 중인 이메일 주소를 입력합니다.
 
-​
+​![AI Builder](Image/ai-builder-17.png)
+
 20. 세부 정보 상자 에 다음 텍스트를 입력합니다.
 
 ```
@@ -165,19 +174,32 @@ Please review the extracted information and edit as necessary.
 
 작업은 다음 스크린샷과 유사해야 합니다.
 
+![AI Builder](Image/ai-builder-18.png)
+
 21. 새 단계 를 선택 하고 제어 를 검색한 다음 조건 을 선택합니다 .
+
+![AI Builder](Image/ai-builder-19.png)
 
 ​22. 값 선택 상자를 선택한 다음 동적 콘텐츠 창 에서 결과를 선택합니다 .
 
+![AI Builder](Image/ai-builder-20.png)
+
 ​23. 조건에 대해 같음을 선택한 다음 값 선택 에 Approve(승인)을 입력합니다 .
+
+![AI Builder](Image/ai-builder-21.png)
 
 24. If yse(그렇다면) 상자 에서 작업 추가를 선택합니다 . Teams 를 검색 한 다음 채팅 또는 채널에 메시지 게시를 선택합니다 .
 
+![AI Builder](Image/ai-builder-22.png)
+
 25. 게시 드롭다운 메뉴 에서 Flow bot을 선택한 다음 게시 드롭다운 메뉴 에서 Flow bot과 채팅을 선택합니다 .
+
+![AI Builder](Image/ai-builder-23.png)
 
 26. 수신자 상자 에 이 실습에 사용 중인 이메일 주소를 입력합니다.
 
-​
+​![AI Builder](Image/ai-builder-24.png)
+
 27. 메시지 상자 에 다음 텍스트를 입력합니다.
 
 ```
@@ -189,9 +211,15 @@ Client Email:
 + 다음 부동산 표시 요청을 추가하세요.
 + 고객 이메일:
 
+![AI Builder](Image/ai-builder-25.png)
+
 28. 동적 콘텐츠 추가를 선택한 다음 새 이메일이 도착할 때 작업 에서 보낸 사람 옵션을 선택합니다 .
 
+![AI Builder](Image/ai-builder-26.png)
+
 29. 클라이언트 이메일 줄 아래의 시작에서 텍스트 시작 및 승인 대기 작업에서 허용된 텍스트 동적 콘텐츠를 선택합니다 .
+
+![AI Builder](Image/ai-builder-27.png)
 
 이 단계에서는 클라이언트 이메일과 승인 작업의 수락됨 텍스트가 포함된 직접 Teams 메시지를 보내 Microsoft Power Apps의 부동산 표시 앱에서 레코드를 생성하도록 상기시킵니다.
 
@@ -201,11 +229,19 @@ Client Email:
 
 30. 지금은 흐름을 저장하고 테스트해 보세요. 저장을 선택한 다음 테스트를 선택합니다 .
 
+![AI Builder](Image/ai-builder-28.png)
+
 31. 수동을 선택한 다음 테스트를 선택합니다 .
+
+![AI Builder](Image/ai-builder-29.png)
 
 ​32. 이메일 주소에서 제목 [Query] - New Booking Request과 다음 본문 내용을 포함하여 이 실습에 사용하는 이메일 주소로 이메일을 보냅니다.
 
 ```
+[Query] - New Booking Request
+```
+
+```
 Hello,
 
 I trust you're doing well. I'm John Doe and I'm actively searching for a new home. Your listing for the property at 789 Maple Avenue, Lexington, KY 40502 has caught my attention, and I'm eager to find out more.
@@ -222,12 +258,16 @@ I trust you're doing well. I'm John Doe and I'm actively searching for a new hom
 Could I arrange to see the property on September 29th at 1:45 PM? I think this falls within your usual showing times, but if that doesn't work for you or if you have other time options, I'd appreciate it if you could inform me as soon as possible.
 ```
 ​
+![AI Builder](Image/ai-builder-30.png)
 
 33. 다음 스크린샷과 같이 자신에게 보낸 이메일과 추출된 정보가 포함된 승인 요청이 표시되는 Outlook을 엽니다.
 
+![AI Builder](Image/ai-builder-31.png)
+
 34. 승인을 선택한 다음 Teams를 엽니다. 요청이 승인되면 다음 이미지와 같이 추출된 정보가 포함된 플로우 봇의 메시지를 받아야 합니다.
+
+![AI Builder](Image/ai-builder-32.png)
 
 35. 흐름이 성공적인 실행을 표시해야 하는 Power Automate 흐름으로 돌아갑니다.
 
-
-성공적으로 실행된 흐름을 표시하는 스크린샷입니다.
+![AI Builder](Image/ai-builder-33.png)
