@@ -3,7 +3,7 @@
 
 이 모듈에서는 Power Automate에서 Copilot을 사용하여 흐름을 생성하는 방법을 다룹니다. Copilot을 사용하여 흐름을 개선하는 방법과 예시 AI 기능을 통해 형식을 사용하는 방법을 알아보세요. Power Automate의 Copilot은 지루한 작업을 자동화하고 시간을 절약하는데 도움이 됩니다. 사용자 친화적이며 워크플로우를 더 빠르고 효율적으로 생성하는데 도움이 됩니다.
 
-​- 소개 : 2분
+- 소개 : 2분
 - 연습 - Power Automate에서 Copilot을 사용하여 승인 흐름 만들기 : 16분
 - Power Automate에서 Copilot을 사용하는 경우 : 1분
 
@@ -64,18 +64,18 @@ Copilot이 메시지를 처리하는데 몇 초 정도 걸립니다. 처리가 �
 
 11. 세부정보 매개변수에 다음 텍스트를 입력합니다.
 
-​부동산 보기에 대한 새로운 요청이 생성되었습니다. 아래 세부정보를 검토한 후 요청을 승인하거나 거부하세요.
-속성: 
-의뢰인: 
-의뢰인 이메일: 
-날짜: 
-시간:
+​부동산 보기에 대한 새로운 요청이 생성되었습니다. 아래 세부정보를 검토한 후 요청을 승인하거나 거부하세요.   
+속성:   
+의뢰인:   
+의뢰인 이메일:   
+날짜:   
+시간:   
 
-A new request for a real estate showing has been created. Please review the details below and approve or reject the request:
-Property: 
-Client: 
-Client Email: 
-Date: Time:
+A new request for a real estate showing has been created. Please review the details below and approve or reject the request:   
+Property:    
+Client:    
+Client Email:    
+Date: Time:   
 
 12. 세부 정보 매개 변수의 속성 : 옆에 커서를 놓은 다음 번개 아이콘을 선택하여 동적 콘텐츠 창을 엽니다.
 
