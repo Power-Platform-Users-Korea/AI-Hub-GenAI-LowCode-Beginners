@@ -38,11 +38,14 @@ AI Builder에서 GPT를 사용하여 텍스트 생성 모델에 대한 프롬프
 이 추출된 정보를 사용하여 Dataverse 테이블에 레코드를 생성할 수 있습니다. 그러나 해당 작업은 이 실습의 범위를 벗어납니다.
 
 1. Power Automate 에 로그인합니다 .
+
 ![Power Automate에 로그인](Image/ai-builder-01.png)
 
-3. 왼쪽 창에서 만들기 > 자동화된 클라우드 흐름을 선택합니다 .
+2. 왼쪽 창에서 만들기 > 자동화된 클라우드 흐름을 선택합니다 .
 
-4. 흐름 이름을 Extract Details for Real Estate Show 로 지정합니다 .
+![자동화된 클라우드 흐름](Image/ai-builder-02.png)
+
+3. 흐름 이름을 Extract Details for Real Estate Show 로 지정합니다 .
 
 ```
 Extract Details for Real Estate Show
