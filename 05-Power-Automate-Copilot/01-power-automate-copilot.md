@@ -22,7 +22,7 @@ Power Automate의 Copilot을 사용하면 흐름을 생성하는 동안 개방�
 
 Copilot을 사용하여 흐름을 만들려면 다음 단계를 따르세요.
 
-​1. Power Automate 에 로그인합니다 .
+1. Power Automate 에 로그인합니다 .
 
 2. Power Automate 내 홈 페이지 중앙에 있는 Copilot으로 흐름 구축 시작 의 텍스트 필드에 다음 프롬프트를 입력합니다.
 
@@ -42,6 +42,7 @@ Copilot으로 편집 디자이너는 오른쪽에 Copilot 채팅 창과 함께 �
 
 6. 테이블 이름 드롭다운 메뉴 에서 Real Estate Shows(부동산 표시)를 검색하여 선택합니다 .
 ​
+
 7. 시작 및 승인 대기 작업을 선택 합니다.
 
 ​승인 유형 매개변수가 누락되었습니다.
@@ -65,7 +66,7 @@ Copilot이 메시지를 처리하는데 몇 초 정도 걸립니다. 처리가 �
 11. 세부정보 매개변수에 다음 텍스트를 입력합니다.
 
 ​부동산 보기에 대한 새로운 요청이 생성되었습니다. 아래 세부정보를 검토한 후 요청을 승인하거나 거부하세요.   
-속성:   
+주소:   
 의뢰인:   
 의뢰인 이메일:   
 날짜:   
@@ -83,7 +84,7 @@ Date: Time:
 
 14. 주소 필드를 찾을 때까지 아래로 스크롤한 다음 선택합니다. 검색 필드에 주소를 입력하여 빠르게 찾을 수도 있습니다.
 
-이제 주소 동적 콘텐츠 필드가 세부 정보 매개변수 에 추가되었습니다 .
+이제 주소 동적 콘텐츠 필드가 세부 정보 매개변수 에 추가되었습니다 .   
 ​
 15. 클라이언트 , 클라이언트 이메일 , 날짜 및 시간 필드 에 대해 동일한 단계를 완료합니다 .
 
@@ -91,10 +92,9 @@ Date: Time:
 
 16. 조건 작업을 선택합니다 . 흐름에 조건 작업이 없는 경우, 승인 단계 아래에서 새 단계 삽입...(+) 버튼을 선택하여 지금 추가하세요.
 
-17. 값 선택 상자를 선택한 다음 동적 콘텐츠 창 에서 결과를 선택합니다 .
-
+17. 값 선택 상자를 선택한 다음 동적 콘텐츠 창 에서 결과를 선택합니다 .   
 ​
-18. 조건에 대해 같음을 선택한 다음, 값 에 대해 Approve(승인)을 입력합니다 .
+18. 조건에 대해 같음을 선택한 다음, 값 에 대해 Approve(승인)을 입력합니다.
 
 19. 조건의 True 및 False 분기 모두에서 Dataverse의 행 업데이트 작업이 있는지 확인하세요 . Copilot이 아직 흐름에 추가하지 않은 경우 흐름에 추가해야 할 수도 있습니다.
 
@@ -125,7 +125,8 @@ Microsoft Dataverse에서 테이블을 생성할 때마다 테이블과 동일�
 
 29. Copilot 채팅 창에서 다음 프롬프트를 입력한 후 제출하십시오.
 
-​조건의 두 분기에 대한 "행 업데이트" 작업 아래에 새로운 "이메일 보내기(V2)" 작업을 추가합니다.
+​조건의 두 분기에 대한 "행 업데이트" 작업 아래에 새로운 "이메일 보내기(V2)" 작업을 추가합니다. 
+
 Under the "Update a row" action for both branches in the condition, add a new "Send an email (V2)" action
 
 ​몇 초 후에 Copilot은 다음 이미지와 같이 자신이 수행한 작업을 설명해야 합니다.
@@ -140,13 +141,15 @@ Under the "Update a row" action for both branches in the condition, add a new "S
 
 ​
 이메일 보내기 작업의 제목 매개변수로 "부동산 표시 요청이 승인되었습니다"를 추가합니다.
+
 Add "Your request for a real estate showing has been approved" as the Subject parameter for the Send an email action
 
 제목 필드 는 프롬프트 텍스트로 채워져야 합니다.
 
 33. 본문 필드 의 경우 Copilot 채팅 창에 다음 텍스트를 입력한 후 키보드의 Enter 키를 누릅니다.
 
-이메일 보내기 작업의 본문 매개변수로서 "좋은 하루 되세요 - 부동산 공개 요청이 승인되었습니다. 자세한 내용은 아래를 참조하세요."를 추가하세요. 
+이메일 보내기 작업의 본문 매개변수로서 "좋은 하루 되세요 - 부동산 공개 요청이 승인되었습니다. 자세한 내용은 아래를 참조하세요."를 추가하세요.
+
 Add "Good day - Your request for a real estate showing has been approved. Please see below for details." as the Body parameter for the Send an email action
 
 
@@ -154,10 +157,10 @@ Add "Good day - Your request for a real estate showing has been approved. Please
 
 34. 본문 텍스트 뒤에 다음 내용을 입력합니다 .
 
-주소:
-Agent 이름:
-표시 날짜:
-표시 시간:
+주소:\n
+Agent 이름:\n
+표시 날짜:\n
+표시 시간:\n
 
 동적 콘텐츠 창의 주소 , Agent 이름 , 날짜 및 시간 필드를 본문 텍스트 의 해당 줄에 추가합니다 .
 
