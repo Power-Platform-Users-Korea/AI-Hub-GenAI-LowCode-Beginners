@@ -43,7 +43,15 @@ AI Builder에서 GPT를 사용하여 텍스트 생성 모델에 대한 프롬프
 
 3. 흐름 이름을 Extract Details for Real Estate Show 로 지정합니다 .
 
-4. 모든 트리거 검색 상자 에 이메일이 도착할 때를 입력한 다음 새 이메일이 도착할 때 트리거를 선택합니다.
+```
+Extract Details for Real Estate Show
+```
+
+4. 모든 트리거 검색 상자 에 이메일이 도착할 때를 입력한 다음, 새 이메일이 도착할 때 트리거를 선택합니다.
+
+```
+When an email arrives
+```
 
 5. 만들기 를 선택합니다 .
 
