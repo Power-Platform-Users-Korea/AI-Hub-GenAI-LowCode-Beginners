@@ -59,16 +59,20 @@ Copilot 토글을 사용한 지능형 작성 지원을 켜짐 으로 설정합�
 6. 주제 이름을 지정 하고 주제 만들기... 공간 에 설명을 제공하라는 새 창이 나타납니다.
 
 7. 주제 이름 지정 필드 에 다음 텍스트를 입력합니다.
+
 ```
 Book a Real Estate Showing
 ```
+
 + 부동산 쇼룸 예약하기
 
 
 8. 주제 만들기... 필드에 다음 텍스트를 입력합니다.
+
 ```
 collect a user's full name, email, address of the property, and date and time of the showing
 ```
+
 + 사용자의 성명, 이메일, 숙소 주소, 예약 날짜 및 시간을 수집합니다.
 
 ​
@@ -86,9 +90,11 @@ collect a user's full name, email, address of the property, and date and time of
 10. 제작 캔버스 상단에 있는 Copilot으로 편집 아이콘을 선택합니다 .
 
 11. Copilot으로 편집 패널 의 무엇을 하시겠습니까? 필드에 다음 텍스트를 입력합니다.
+
 ```
 ​update the message to say thank you to the Name variable from the previous node and then proceed to ask the question
 ```
+
 + ​이전 노드의 Name 변수에 감사하다는 메시지를 업데이트한 다음 질문을 계속 진행합니다.
 
 업데이트를 선택합니다.
@@ -172,14 +178,17 @@ add a multiple choice question to confirm if the user's information is correct w
 17. 화면 왼쪽 하단에 있는 코파일럿 테스트 버튼을 선택하여 테스트 패널을 엽니다.
 
 ​18. 대화 시작 메시지가 나타나면 코파일럿이 대화를 시작합니다. 이에 대한 응답으로 생성한 주제에 대한 트리거 문구를 입력하세요.
+
 ```
 I want to book a real estate showing
 ```
+
 + ​부동산 쇼를 예약하고 싶습니다.
 
 코파일럿은 "당신의 이름은 무엇입니까?"라고 대답합니다. 질문은 다음 이미지와 같습니다.
 
 19. 나머지 정보를 입력하세요.
+
 ```
 Full name: <Your name>   
 Email address: <Your email address>    
