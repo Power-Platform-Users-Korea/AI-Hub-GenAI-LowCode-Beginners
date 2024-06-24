@@ -98,6 +98,7 @@ collect a user's full name, email, address of the property, and date and time of
 새 노드를 추가하는 것 외에도 Copilot을 사용하여 기존 노드를 업데이트할 수 있습니다.
 
 ​12. 노드 주위의 빈 공간을 클릭하여 노드가 선택되지 않았는지 확인하십시오. Copilot으로 편집 패널 의 무엇을 하시겠습니까? 필드에 다음 텍스트를 입력합니다.
+
 ​```
 summarize the information collected in an adaptive card
 ```
