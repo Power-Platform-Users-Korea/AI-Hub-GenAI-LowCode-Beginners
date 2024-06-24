@@ -73,6 +73,10 @@ When an email arrives
 
 ​7. 제목 필터 에 "[Query]"를 입력합니다.
 
+```
+[Query]
+```
+
 ![AI Builder](Image/ai-builder-08.png)
 
 > 참고
@@ -87,11 +91,9 @@ When an email arrives
 
 ![AI Builder](Image/ai-builder-10.png)
 
-10. 프롬프트 만들기를 선택한 다음 공백에서 시작을 선택합니다 .
+10. 프롬프트 만들기를 선택한 다음 공백에서 시작을 선택합니다. (기존 설명과 달라짐)
 
-
-
-11. 모델이 생성해야 하는 텍스트 설명 상자 에 다음 텍스트를 붙여넣습니다 .
+11. 모델이 생성해야 하는 텍스트 설명 상자 에 다음 텍스트를 붙여넣습니다 . (AI Prompt에서 작업하는 것으로 바뀌었음)
 
 ```
 Extract "Name", "Address", "Date", and "Time" from the text below.
@@ -128,12 +130,17 @@ Extract "Name", "Address", "Date", and "Time" from the text below. When the text
 
 13. 흐름에서 프롬프트 사용 을 선택합니다 .
 
+![AI Builder](Image/ai-builder-11.png)
+
 ​14. 프롬프트 에서 예제 이메일을 삭제 한 다음 이를 트리거 이메일의 본문 동적 콘텐츠로 바꿉니다.
+
+![AI Builder](Image/ai-builder-12.png)
 
 이메일이 도착할 때마다 GPT는 이메일 본문에서 관련 정보를 추출하려고 시도합니다.
 
 ​AI가 생성한 콘텐츠는 사실이 부정확하거나 부적절하거나 편향될 수 있습니다. AI 생성 텍스트를 사용하는 워크플로를 어디에 게시하거나 사용하기 전에 사람의 감독을 삽입하는 관행을 도입하는 것이 좋습니다 .
 
+----------------
 
 이제 사람이 추출된 정보를 검토할 수 있도록 승인 단계를 추가하겠습니다.
 
