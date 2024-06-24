@@ -22,7 +22,7 @@
 
 1. Microsoft Copilot Studio 에 로그인합니다 .
 
-![Copilot Studio](Image/copilot-studio-01.png)
+![Copilot Studio](Images/copilot-studio-01.png)
 
 현재 환경이 올바른지, 미국 지역에서 제작되었는지 확인하세요.
 
