@@ -51,17 +51,27 @@ AI Builder에서 GPT를 사용하여 텍스트 생성 모델에 대한 프롬프
 Extract Details for Real Estate Show
 ```
 
+![흐름 이름](Image/ai-builder-03.png)
+
 4. 모든 트리거 검색 상자 에 이메일이 도착할 때를 입력한 다음, 새 이메일이 도착할 때 트리거를 선택합니다.
 
 ```
 When an email arrives
 ```
 
+![트리거](Image/ai-builder-04.png)
+
 5. 만들기 를 선택합니다 .
+
+![만들기](Image/ai-builder-05.png)
 
 6. 새 이메일이 도착할 때 트리거 에서 고급 옵션 표시를 선택합니다 .
 
+![AI Builder](Image/ai-builder-06.png)
+
 ​7. 제목 필터 에 "[Query]"를 입력합니다.
+
+![AI Builder](Image/ai-builder-07.png)
 
 > 참고
 > 이 단계를 수행하면 이메일 제목에 "쿼리"라는 단어가 포함된 경우에만 흐름이 실행됩니다(이 랩의 목적에 따라).
@@ -69,9 +79,15 @@ When an email arrives
 
 8. 새 단계를 선택한 다음 AI Builder를 선택합니다 .
 
+![AI Builder](Image/ai-builder-08.png)
+
 9. 작업 목록에서 GPT로 텍스트 생성을 선택합니다 .
 
+![AI Builder](Image/ai-builder-09.png)
+
 10. 프롬프트 만들기를 선택한 다음 공백에서 시작을 선택합니다 .
+
+![AI Builder](Image/ai-builder-10.png)
 
 11. 모델이 생성해야 하는 텍스트 설명 상자 에 다음 텍스트를 붙여넣습니다 .
 
