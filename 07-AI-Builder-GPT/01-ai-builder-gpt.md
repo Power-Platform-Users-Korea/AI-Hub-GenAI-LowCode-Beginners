@@ -93,7 +93,10 @@ When an email arrives
 
 10. 프롬프트 만들기를 선택한 다음 공백에서 시작을 선택합니다. (기존 설명과 달라짐)
 
-11. 모델이 생성해야 하는 텍스트 설명 상자 에 다음 텍스트를 붙여넣습니다 . (AI Prompt에서 작업하는 것으로 바뀌었음)
+AI Prompt에서 먼저 만들어야 합니다.
+![AI Builder](Image/ai-builder-10-2.png)
+
+11. 모델이 생성해야 하는 텍스트 설명 상자 에 다음 텍스트를 붙여넣습니다 . 
 
 ```
 Extract "Name", "Address", "Date", and "Time" from the text below.
@@ -109,6 +112,9 @@ I would like to kindly request a viewing of this property on September 15th at 3
 [End of text]
 ```
 
+![AI Builder](Image/ai-builder-10-3.png)
+
+
 이전 프롬프트에서는 GPT 프롬프트( 지침 및 컨텍스트 )를 생성하기 위한 기본 공식을 사용합니다. 여기서 프롬프트의 첫 번째 부분은 지침 구성 요소입니다.
 
 ````
@@ -120,13 +126,19 @@ Extract "Name", "Address", "Date", and "Time" from the text below. When the text
 ```
 [Start of text] context [End of text]
 ```
-​
+
+![AI Builder](Image/ai-builder-10-4.png)
+
+![AI Builder](Image/ai-builder-10-5.png)
+
 명령은 모델이 수행해야 하는 작업을 알려줍니다. 컨텍스트는 모델이 지침을 따르는데 필요한 정보입니다. 자동화 작업에서 지침은 일정하며 동적 콘텐츠는 다음 단계에서 업데이트할 컨텍스트를 제공합니다.
 
 ​
 12. 테스트를 선택하여 GPT가 텍스트에서 올바른 정보를 추출하는지 확인합니다.
 
 몇 초 동안 응답을 준비한 후 GPT 모델은 다음 이미지와 같이 예제 프롬프트에서 관련 정보를 추출할 수 있어야 합니다.
+
+![AI Builder](Image/ai-builder-10-6.png)
 
 13. 흐름에서 프롬프트 사용 을 선택합니다 .
 
