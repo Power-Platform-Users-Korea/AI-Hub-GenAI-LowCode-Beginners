@@ -98,11 +98,10 @@ collect a user's full name, email, address of the property, and date and time of
 새 노드를 추가하는 것 외에도 Copilot을 사용하여 기존 노드를 업데이트할 수 있습니다.
 
 ​12. 노드 주위의 빈 공간을 클릭하여 노드가 선택되지 않았는지 확인하십시오. Copilot으로 편집 패널 의 무엇을 하시겠습니까? 필드에 다음 텍스트를 입력합니다.
-
-​```
+```
 summarize the information collected in an adaptive card
 ```
-​+ 적응형 카드에 수집된 정보를 요약합니다.
+​- 적응형 카드에 수집된 정보를 요약합니다.
 
 업데이트를 선택합니다.
 
@@ -111,6 +110,7 @@ summarize the information collected in an adaptive card
 13. 적응형 카드를 선택합니다. 적응형 카드 속성이 화면 오른쪽에 나타나야 합니다.
 
 적응형 카드 수식은 위와 유사해야 합니다. 그렇지 않은 경우 아래 수식을 복사하여 붙여 넣을 수 있습니다.
+
 ```
 {
 type: "AdaptiveCard", 
@@ -152,10 +152,13 @@ type: "AdaptiveCard",
    ]
 }
 ```
+
 14. 적응형 카드 속성을 열면 Copilot으로 편집 패널이 닫힙니다. 따라서 다시 열려면 아이콘을 선택해야 합니다. 무엇 을 하시겠습니까? 필드에 다음 텍스트를 입력합니다.
+
 ​```
 add a multiple choice question to confirm if the user's information is correct with the option to select either "Yes" or "No"
 ```
+
 + 객관식 질문을 추가하여 "예" 또는 "아니오"를 선택할 수 있는 옵션으로 사용자 정보가 정확한지 확인합니다.​
 
 업데이트를 선택합니다 .
