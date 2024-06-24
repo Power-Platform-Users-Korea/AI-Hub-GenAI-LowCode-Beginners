@@ -79,9 +79,9 @@ I would like to kindly request a viewing of this property on September 15th at 3
 
 이전 프롬프트에서는 GPT 프롬프트( 지침 및 컨텍스트 )를 생성하기 위한 기본 공식을 사용합니다. 여기서 프롬프트의 첫 번째 부분은 지침 구성 요소입니다.
 
-​```
+````
 Extract "Name", "Address", "Date", and "Time" from the text below. When the text below has less than a couple of words, answer that you can't extract information.
-```
+````
 
 다음 텍스트는 수식의 컨텍스트 구성 요소입니다.
 
