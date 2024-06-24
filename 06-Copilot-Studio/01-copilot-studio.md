@@ -107,7 +107,7 @@ collect a user's full name, email, address of the property, and date and time of
 ```
 summarize the information collected in an adaptive card
 ```
-​- 적응형 카드에 수집된 정보를 요약합니다.
+​+ 적응형 카드에 수집된 정보를 요약합니다.
 
 업데이트를 선택합니다.
 
@@ -162,7 +162,7 @@ type: "AdaptiveCard",
 14. 적응형 카드 속성을 열면 Copilot으로 편집 패널이 닫힙니다. 따라서 다시 열려면 아이콘을 선택해야 합니다. 무엇 을 하시겠습니까? 필드에 다음 텍스트를 입력합니다.
 
 ​```
-add a multiple choice question to confirm if the user's information is correct with the option to select either "Yes" or "No"
+add a multiple choice question to confirm if the user's information is correct with the option to select either Yes or No
 ```
 
 + 객관식 질문을 추가하여 "예" 또는 "아니오"를 선택할 수 있는 옵션으로 사용자 정보가 정확한지 확인합니다.​
