@@ -123,6 +123,7 @@ Extract "Name", "Address", "Date", and "Time" from the text below. When the text
 ```
 Please review the extracted information and edit as necessary.
 ```
+
 ​+ 추출된 정보를 검토하고 필요에 따라 수정하세요.
 
 작업은 다음 스크린샷과 유사해야 합니다.
