@@ -62,13 +62,17 @@ Copilot 토글을 사용한 지능형 작성 지원을 켜짐 으로 설정합�
 ```
 Book a Real Estate Showing
 ```
+```
 부동산 쇼룸 예약하기
+```
 
 8. 주제 만들기... 필드에 다음 텍스트를 입력합니다.
-
+```
 collect a user's full name, email, address of the property, and date and time of the showing
-
+```
+```
 사용자의 성명, 이메일, 숙소 주소, 예약 날짜 및 시간을 수집합니다.
+```
 ​
 만들기 를 선택합니다 .
 
