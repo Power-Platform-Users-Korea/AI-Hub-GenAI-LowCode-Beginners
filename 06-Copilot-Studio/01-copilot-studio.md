@@ -30,7 +30,10 @@
 
 3. 코파일럿의 이름을 Real Estate Booking Service 로 지정한 다음 English를 선택하세요 .
 
-생성적 답변으로 대화 강화 옵션 도 표시되어야 합니다.
+```
+Real Estate Booking Service
+```
+생성적 답변으로 대화 강화 옵션도 표시되어야 합니다.
 
 Generative AI 창을 설정하여 코파일럿에게 지식을 제공합니다.
 
@@ -51,10 +54,8 @@ Generative AI 창을 설정하여 코파일럿에게 지식을 제공합니다.
 
 > 참고    
 > Copilot으로 만들기 옵션이 표시되지 않으면 지능형 작성 지원을 활성화해야 할 수도 있습니다.
-
-상단 메뉴에서 설정​​ 아이콘을 선택한 후 일반 설정을 선택합니다.
-
-Copilot 토글을 사용한 지능형 작성 지원을 켜짐 으로 설정합니다.
+> 상단 메뉴에서 설정​​ 아이콘을 선택한 후 일반 설정을 선택합니다.
+> Copilot 토글을 사용한 지능형 작성 지원을 켜짐 으로 설정합니다.
 
 6. 주제 이름을 지정 하고 주제 만들기... 공간 에 설명을 제공하라는 새 창이 나타납니다.
 
@@ -92,10 +93,14 @@ collect a user's full name, email, address of the property, and date and time of
 11. Copilot으로 편집 패널 의 무엇을 하시겠습니까? 필드에 다음 텍스트를 입력합니다.
 
 ```
+​update the Email Question to say thank you to the Name variable from the previous node and then proceed to ask the question
+```
+
+```
 ​update the message to say thank you to the Name variable from the previous node and then proceed to ask the question
 ```
 
-+ ​이전 노드의 Name 변수에 감사하다는 메시지를 업데이트한 다음 질문을 계속 진행합니다.
++ ​이전 노드의 Name 변수에 감사하다는 메시지를 업데이트한 다음, 질문을 계속 진행합니다.
 
 업데이트를 선택합니다.
 
@@ -185,7 +190,7 @@ add a multiple choice question to confirm if the user's information is correct w
 I want to book a real estate showing
 ```
 
-+ ​부동산 쇼를 예약하고 싶습니다.
++ ​부동산 쇼룸를 예약하고 싶습니다.
 
 코파일럿은 "당신의 이름은 무엇입니까?"라고 대답합니다. 질문은 다음 이미지와 같습니다.
 
