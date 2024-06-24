@@ -22,6 +22,8 @@
 
 1. Microsoft Copilot Studio 에 로그인합니다 .
 
+![Copilot Studio](Image/copilot-studio-01.png)
+
 현재 환경이 올바른지, 미국 지역에서 제작되었는지 확인하세요.
 
 2. 왼쪽 탐색 메뉴에서 홈을 선택한 다음 + 코파일럿 생성을 선택합니다 .
