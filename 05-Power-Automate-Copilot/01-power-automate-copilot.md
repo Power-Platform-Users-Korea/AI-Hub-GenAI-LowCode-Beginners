@@ -59,6 +59,7 @@ Copilot으로 편집 디자이너는 오른쪽에 Copilot 채팅 창과 함께 �
 
 ![power automate](Images/power-automate-copilot-05.png)
 
+
 6. 테이블 이름 드롭다운 메뉴 에서 Real Estate Shows(부동산 표시)를 검색하여 선택합니다 .
 ​
 ![power automate](Images/power-automate-copilot-06.png)
@@ -139,6 +140,7 @@ Date: Time:
 
 ![power automate](Images/power-automate-copilot-15.png)
 
+
 16. 조건 작업을 선택합니다. 흐름에 조건 작업이 없는 경우, 승인 단계 아래에서 새 단계 삽입...(+) 버튼을 선택하여 지금 추가하세요.
 
 ![power automate](Images/power-automate-copilot-16.png)
@@ -165,26 +167,45 @@ Copilot이 아직 흐름에 추가하지 않은 경우 흐름에 추가해야 �
 
 21. 행 ID 필드를 선택한 다음 동적 콘텐츠 창 에서 부동산 표시 고유 식별자 필드를 선택합니다 .
 
+![power automate](Images/power-automate-copilot-21.png)
+
 Microsoft Dataverse에서 테이블을 생성할 때마다 테이블과 동일한 이름으로 열이 자동으로 생성됩니다. 이 열은 생성된 레코드(또는 행)에 대한 고유 조회 ID 역할을 합니다.
 ​
 
 22. 고급 매개변수 아래에서 모두 표시를 선택합니다 .
 
+![power automate](Images/power-automate-copilot-22.png)
+
 23. 상태 드롭 다운 메뉴 에서 확인됨을 선택합니다 .
+
+![power automate](Images/power-automate-copilot-23.png)
 
 표시가 승인되면, 부동산 표시 테이블 의 상태 필드가 확인됨 으로 업데이트됩니다 .
 
 ​24. 조건의 False 분기 아래에서 Dataverse에 대한 행 업데이트 작업을 선택합니다 . (빠진 경우 이 작업을 추가하세요.)
 
+![power automate](Images/power-automate-copilot-24.png)
+
 ​25. 테이블 이름 드롭다운 메뉴 에서 Real Estate Shows(부동산 표시)를 검색하여 선택합니다 .
+
+![power automate](Images/power-automate-copilot-25.png)
 
 ​26. 행 ID 필드를 선택한 다음, 동적 콘텐츠 창 에서 부동산 표시 고유 식별자 필드를 선택합니다 .
 
+![power automate](Images/power-automate-copilot-26.png)
+
 ​27. 고급 매개변수 아래에서 모두 표시를 선택합니다 .
+
+![power automate](Images/power-automate-copilot-27.png)
 
 28. 상태 드롭 다운 메뉴 에서 취소됨을 선택합니다 .
 
+![power automate](Images/power-automate-copilot-28.png)
+
 ​표시가 거부되면, 부동산 표시 테이블 의 상태 필드가 취소됨 으로 업데이트됩니다 .
+
+
+--------------
 
 29. Copilot 채팅 창에서 다음 프롬프트를 입력한 후 제출하십시오.
 
@@ -195,13 +216,22 @@ Under the "Update a row" action for both branches in the condition, add a new "S
 ​조건의 두 분기에 대한 "행 업데이트" 작업 아래에 새로운 "이메일 보내기(V2)" 작업을 추가합니다. 
 ```
 
-​몇 초 후에 Copilot은 다음 이미지와 같이 자신이 수행한 작업을 설명해야 합니다.
+![power automate](Images/power-automate-copilot-29.png)
 
-업데이트된 흐름이 표시되어야 합니다. 계속하려면 이전 단계에서 연결을 수정해야 할 수도 있습니다. 계속하기 전에 오류를 수정하세요.
+​몇 초 후에 Copilot은 다음 이미지와 같이 자신이 수행한 작업을 설명해야 합니다.
+업데이트된 흐름이 표시되어야 합니다. 
+
+![power automate](Images/power-automate-copilot-29-2.png)
+
+계속하려면 이전 단계에서 연결을 수정해야 할 수도 있습니다. 계속하기 전에 오류를 수정하세요.
 
 30. 조건의 True 분기 에서 이메일 보내기 작업을 선택합니다 .
 
+![power automate](Images/power-automate-copilot-30.png)
+
 ​31. 받는 사람(To) 필드를 선택하고, example@example.com 이메일 주소를 제거한 다음, 동적 콘텐츠 창 에서 클라이언트 이메일 필드를 선택합니다 .
+
+![power automate](Images/power-automate-copilot-31.png)
 
 32. 제목 필드 의 경우, Copilot 채팅 창에 다음 텍스트를 입력한 후 키보드의 Enter 키를 누릅니다.
 
@@ -211,7 +241,11 @@ Add "Your request for a real estate showing has been approved" as the Subject pa
 ​
 + 이메일 보내기 작업의 제목 매개변수로 "부동산 표시 요청이 승인되었습니다"를 추가합니다.
 
+![power automate](Images/power-automate-copilot-32.png)
+
 제목 필드 는 프롬프트 텍스트로 채워져야 합니다.
+
+![power automate](Images/power-automate-copilot-32-2.png)
 
 33. 본문 필드 의 경우 Copilot 채팅 창에 다음 텍스트를 입력한 후 키보드의 Enter 키를 누릅니다.
 
@@ -220,6 +254,8 @@ Add "Good day - Your request for a real estate showing has been approved. Please
 ```
 
 + 이메일 보내기 작업의 본문 매개변수로서 "좋은 하루 되세요 - 부동산 공개 요청이 승인되었습니다. 자세한 내용은 아래를 참조하세요."를 추가하세요.
+
+![power automate](Images/power-automate-copilot-33.png)
 
 본문 필드 는 프롬프트 텍스트로 채워져야 합니다.
 
@@ -239,12 +275,19 @@ Agent 이름:
 
 동적 콘텐츠 창의 주소 , Agent 이름 , 날짜 및 시간 필드를 본문 텍스트 의 해당 줄에 추가합니다 .
 
+![power automate](Images/power-automate-copilot-34.png)
 ​
 35. 동적 콘텐츠 창의 응답 요약 필드를 본문 텍스트 끝에 추가합니다 .
 
+![power automate](Images/power-automate-copilot-35.png)
+
 36. 조건의 False 분기 에서 이메일 보내기 작업을 선택합니다 .
 
+![power automate](Images/power-automate-copilot-36.png)
+
 37. 받는 사람 필드를 선택하고 example@example.com 이메일 주소를 제거한 다음 동적 콘텐츠 창 에서 클라이언트 이메일 필드를 선택합니다 .
+
+![power automate](Images/power-automate-copilot-37.png)
 
 ​38. 제목 필드 의 경우 Copilot 채팅 창에 다음 내용을 입력한 후 키보드의 Enter 키를 누릅니다.
 
@@ -253,6 +296,8 @@ Add "Your request for a real estate showing has been rejected" as the Subject pa
 ```
 
 ​+ 이메일 보내기 작업의 제목 매개변수로 "부동산 표시 요청이 거부되었습니다"를 추가하세요.
+
+![power automate](Images/power-automate-copilot-38.png)
 
 Copilot은 요청한 내용을 항상 이해하지 못하므로 기대한 내용을 항상 정확하게 얻지 못할 수도 있으므로 "실행 취소"를 선택하거나 수동으로 흐름에 추가할 수 있습니다. Copilot은 사용자를 지원하도록 설계된 공동 작업 도구이지만, Copilot은 사용자가 지시한 내용을 항상 올바르게 해석하지 못할 수도 있습니다.
 
@@ -264,6 +309,7 @@ Add "Good day - Your request for a real estate showing has been rejected. Please
 
 + ​이메일 보내기 작업의 본문 매개변수로 "안녕하세요 - 부동산 공개 요청이 거부되었습니다. 자세한 내용은 아래를 참조하세요."를 추가하세요.
 
+![power automate](Images/power-automate-copilot-39.png)
 
 어떤 이유로 Copilot이 이를 놓친 경우 실행 취소하고 다시 시도하거나 수동으로 조정할 수 있습니다.
 
@@ -283,18 +329,33 @@ Agent 이름:
 
 동적 콘텐츠 창의 주소 , Agent 이름 , 날짜 및 시간 필드를 본문 텍스트 의 해당 줄에 추가합니다 .
 
+![power automate](Images/power-automate-copilot-40.png)
+
 ​41. 동적 콘텐츠 창의 응답 요약 필드를 본문 텍스트 끝에 추가합니다 .
+
+![power automate](Images/power-automate-copilot-41.png)
 
 42. 화면 왼쪽 상단에서 Dataverse 레코드가 생성될 때 요청 승인 텍스트를 선택하여 흐름 이름을 부동산 표시에 대한 승인 요청 으로 바꿉니다.
 
+![power automate](Images/power-automate-copilot-42.png)
+
 ​43. 화면 명령 모음의 오른쪽 상단 부분에 있는 저장 버튼 을 선택하여 흐름을 저장합니다 .
+
+![power automate](Images/power-automate-copilot-43.png)
 
 44. 화면 오른쪽 상단에 있는 테스트 버튼 을 선택하여 흐름을 테스트합니다 . 수동을 선택한 다음 테스트를 선택합니다 .
 
+![power automate](Images/power-automate-copilot-44.png)
+
+-------------
+
 45. 부동산 표시 요청을 제출하려면 Power Apps 의 부동산 표시 앱으로 이동하세요 .
+
+![power automate](Images/power-automate-copilot-45.png)
 
 ​46. 앱을 실행한 다음 +새로 만들기를 선택하여 새 표시 요청을 만듭니다.
 
+![power automate](Images/power-automate-copilot-46.png)
 ​
 47. 다음 정보로 필드를 채우십시오.
 
@@ -318,6 +379,8 @@ Agent 이름:
 
 50. 이 실습에 사용 중인 이메일 계정에 로그인한 다음 이메일이 도착할 때까지 기다립니다.
 
+![power automate](Images/power-automate-copilot-50.png)
+
 > ​참고  
 > 흐름이 즉시 실행되지 않으면 기다려야 합니다. 특히 첫 번째 시도에서 흐름이 트리거되는 데 최대 10분이 걸릴 수 있습니다.
 
@@ -331,8 +394,11 @@ Agent 이름:
 Sure thing. Can't wait to see you there.
 ```
 
+![power automate](Images/power-automate-copilot-52.png)
+
 흐름은 계속 실행됩니다. 행을 업데이트하고 요청자에게 이메일을 보냅니다. 요청자에게 전송되는 이메일은 다음 이미지와 유사합니다.
 
+![power automate](Images/power-automate-copilot-52-2.png)
 
 53. 흐름을 확인하고 이제 실행 기록에 흐름이 성공 으로 표시되어 있는지 확인합니다.
 
