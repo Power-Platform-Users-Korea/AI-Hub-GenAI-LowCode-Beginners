@@ -24,6 +24,8 @@ Copilot을 사용하여 흐름을 만들려면 다음 단계를 따르세요.
 
 1. Power Automate 에 로그인합니다 .
 
+![Copilot Studio](Images/power-automate-copilot-01.png)
+
 2. Power Automate 내 홈 페이지 중앙에 있는 Copilot으로 흐름 구축 시작 의 텍스트 필드에 다음 프롬프트를 입력합니다.
 
 ```
