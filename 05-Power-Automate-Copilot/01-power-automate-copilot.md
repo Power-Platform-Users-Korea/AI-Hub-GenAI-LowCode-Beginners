@@ -26,7 +26,14 @@ Copilot을 사용하여 흐름을 만들려면 다음 단계를 따르세요.
 
 2. Power Automate 내 홈 페이지 중앙에 있는 Copilot으로 흐름 구축 시작 의 텍스트 필드에 다음 프롬프트를 입력합니다.
 
+```
 request approval when a Dataverse record is created
+```
+
+```
+Start and wait for approval when a Dataverse record is created.
+Please also add a flow to update a Dataverse record based on conditions after approval.
+```
 
 제출 버튼 을 선택합니다 .
 
@@ -42,6 +49,13 @@ Copilot으로 편집 디자이너는 오른쪽에 Copilot 채팅 창과 함께 �
 
 6. 테이블 이름 드롭다운 메뉴 에서 Real Estate Shows(부동산 표시)를 검색하여 선택합니다 .
 ​
+Real Estate Shows 테이블이 없는 경우, Power Apps에서 아래 설명문으로 먼저 앱을 만듭니다.
+
+```
+real estate showings을 관리하는 앱을 구축합니다. 
+필수 열은 ID, address, date, time, status, agent name, client full name, and client email입니다. 열이름은 영어여야 합니다.
+상태 선택 항목은 보류 중, 확정, 취소, 완료여야 합니다.
+```
 
 7. 시작 및 승인 대기 작업을 선택 합니다.
 
