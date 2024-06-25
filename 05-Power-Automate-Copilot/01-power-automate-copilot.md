@@ -24,7 +24,7 @@ Copilot을 사용하여 흐름을 만들려면 다음 단계를 따르세요.
 
 1. Power Automate 에 로그인합니다 .
 
-![Copilot Studio](Images/power-automate-copilot-01.png)
+![power automate](Images/power-automate-copilot-01.png)
 
 2. Power Automate 내 홈 페이지 중앙에 있는 Copilot으로 흐름 구축 시작 의 텍스트 필드에 다음 프롬프트를 입력합니다.
 
@@ -37,9 +37,13 @@ Start and wait for approval when a Dataverse record is created.
 Please also add a flow to update a Dataverse record based on conditions after approval.
 ```
 
-제출 버튼 을 선택합니다 .
+제출 버튼을 선택합니다 .
+
+![power automate](Images/power-automate-copilot-02.png)
 
 ​3. 프롬프트에서 Copilot은 검토할 수 있는 제안 흐름에 대한 개요를 제공합니다. 흐름에는 행이 추가, 수정 또는 삭제될 때 Dataverse 트리거 와 시작 및 승인 대기 단계라는 두 가지 기본 단계가 있을 것으로 예상됩니다. 흐름을 수락하려면 다음 을 선택 하고, 다른 제안 표시 를 선택할 수도 있습니다. Copilot이 아래 이미지와 유사한 흐름을 제안하는지 확인하세요.
+
+![power automate](Images/power-automate-copilot-03.png)
 
 4. 연결된 앱과 서비스를 검토하세요. 연결되지 않은 경우 편집하거나 수정한 다음 흐름 만들기 를 선택합니다 .
 
