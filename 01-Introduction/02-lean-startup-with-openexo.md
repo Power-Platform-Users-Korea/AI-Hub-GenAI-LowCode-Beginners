@@ -77,7 +77,7 @@ IDEAS는 기하급수적 성장을 위한 다섯 가지 내부 요소를 의미�
   - **Power Platform 활용:** 협업 플랫폼 통합 및 커뮤니케이션 자동화 도구 개발.
 
 >참고: [https://web.openexo.com/learn-about-exo/](https://web.openexo.com/learn-about-exo/)
->OpenExO 프레임워크를 따른 대표적인 기업으로는 'Airbnb', 'Google', 'Tesla', 'Netflix' 등이 있습니다.
+>OpenExO 프레임워크를 따른 대표적인 기업으로는 'Airbnb', 'Google', 'Tesla', 'Netflix' 등이 있습니다.  
 >ExO 프레임워크를 따르는 기업들
 >>**Airbnb:**  
 >>- **MTP:** 누구나 어디서든 소속감을 느낄 수 있는 세상을 만들기.
