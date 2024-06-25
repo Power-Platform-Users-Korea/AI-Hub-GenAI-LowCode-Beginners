@@ -29,15 +29,15 @@ Copilot을 사용하여 흐름을 만들려면 다음 단계를 따르세요.
 2. Power Automate 내 홈 페이지 중앙에 있는 Copilot으로 흐름 구축 시작 의 텍스트 필드에 다음 프롬프트를 입력합니다.
 
 ```
-request approval when a Dataverse record is created
-```
-
-```
 Start and wait for approval when a Dataverse record is created.
 Please also add a flow to update a Dataverse record based on conditions after approval.
 ```
 
-제출 버튼을 선택합니다 .
+```
+request approval when a Dataverse record is created
+```
+
+생성 버튼을 선택합니다 .
 
 ![power automate](Images/power-automate-copilot-02.png)
 
@@ -47,14 +47,22 @@ Please also add a flow to update a Dataverse record based on conditions after ap
 
 4. 연결된 앱과 서비스를 검토하세요. 연결되지 않은 경우 편집하거나 수정한 다음 흐름 만들기 를 선택합니다 .
 
+![power automate](Images/power-automate-copilot-04.png)
+
 Copilot으로 편집 디자이너는 오른쪽에 Copilot 채팅 창과 함께 흐름과 함께 열립니다.
+
+![power automate](Images/power-automate-copilot-04-2.png)
 
 5. 행이 추가, 수정 또는 삭제될 때 트리거 를 선택하여, 일부 매개변수를 설정합니다 .
 
 ​화면 왼쪽 패널에는 필요한 빈 테이블 이름 매개 변수를 포함하여, 트리거 세부 정보가 표시됩니다.
 
+![power automate](Images/power-automate-copilot-05.png)
+
 6. 테이블 이름 드롭다운 메뉴 에서 Real Estate Shows(부동산 표시)를 검색하여 선택합니다 .
 ​
+![power automate](Images/power-automate-copilot-06.png)
+
 Real Estate Shows 테이블이 없는 경우, Power Apps에서 아래 설명문으로 먼저 앱을 만듭니다.
 
 ```
@@ -67,22 +75,29 @@ real estate showings을 관리하는 앱을 구축합니다.
 
 ​승인 유형 매개변수가 누락되었습니다.
 
+![power automate](Images/power-automate-copilot-07.png)
+
 ​8. 승인 유형 드롭다운 메뉴 에서 승인/거부 - 먼저 응답을 선택합니다 .
+
+![power automate](Images/power-automate-copilot-08.png)
 
 ​승인 유형을 선택하면 이제 더 많은 매개변수를 사용할 수 있습니다.
 
-
 9. Copilot 채팅 창에 다음 프롬프트를 입력합니다.
-
-시작 및 승인 대기 작업에 대한 제목 매개변수로 "부동산 표시에 대한 새 요청"을 추가합니다.​
 
 ```
 Add "New Request for Real Estate Showing" as the Title parameter for the Start and wait for an approval action
 ```
+
++ 시작 및 승인 대기 작업에 대한 제목 매개변수로 "부동산 표시에 대한 새 요청"을 추가합니다.​
+
+![power automate](Images/power-automate-copilot-09.png)
 ​
 Copilot이 메시지를 처리하는데 몇 초 정도 걸립니다. 처리가 완료되면 Title 매개변수가 프롬프트 텍스트로 채워집니다.
 
 10. 할당 대상 매개변수에 이 실습에 사용 중인 이메일 주소를 입력합니다. 이 이메일 주소는 승인 요청을 받는 이메일 주소입니다.
+
+![power automate](Images/power-automate-copilot-10.png)
 
 11. 세부정보 매개변수에 다음 텍스트를 입력합니다.
 
@@ -102,11 +117,19 @@ Date: Time:
 시간:   
 ```
 
-12. 세부 정보 매개 변수의 속성 : 옆에 커서를 놓은 다음 번개 아이콘을 선택하여 동적 콘텐츠 창을 엽니다.
+![power automate](Images/power-automate-copilot-11.png)
+
+12. 세부 정보 매개 변수의 Property: 옆에 커서를 놓은 다음 번개 아이콘을 선택하여 동적 콘텐츠 창을 엽니다.
+
+![power automate](Images/power-automate-copilot-12.png)
 
 13. 동적 콘텐츠 창 에서 자세히 보기를 선택하여 사용 가능한 동적 콘텐츠 목록을 확장할 수 있습니다.
 
+![power automate](Images/power-automate-copilot-13.png)
+
 14. 주소 필드를 찾을 때까지 아래로 스크롤한 다음 선택합니다. 검색 필드에 주소를 입력하여 빠르게 찾을 수도 있습니다.
+
+![power automate](Images/power-automate-copilot-14.png)
 
 이제 주소 동적 콘텐츠 필드가 세부 정보 매개변수 에 추가되었습니다 .   
 ​
@@ -114,15 +137,31 @@ Date: Time:
 
 나머지 필드 작업을 완료하면, 값이 다음 이미지와 유사해야 합니다.
 
-16. 조건 작업을 선택합니다 . 흐름에 조건 작업이 없는 경우, 승인 단계 아래에서 새 단계 삽입...(+) 버튼을 선택하여 지금 추가하세요.
+![power automate](Images/power-automate-copilot-15.png)
 
-17. 값 선택 상자를 선택한 다음 동적 콘텐츠 창 에서 결과를 선택합니다 .   
+16. 조건 작업을 선택합니다. 흐름에 조건 작업이 없는 경우, 승인 단계 아래에서 새 단계 삽입...(+) 버튼을 선택하여 지금 추가하세요.
+
+![power automate](Images/power-automate-copilot-16.png)
+
+17. 값 선택 상자를 선택한 다음 동적 콘텐츠 창 에서 결과를 선택합니다.   
 ​
+![power automate](Images/power-automate-copilot-17.png)
+
 18. 조건에 대해 같음을 선택한 다음, 값 에 대해 Approve(승인)을 입력합니다.
 
-19. 조건의 True 및 False 분기 모두에서 Dataverse의 행 업데이트 작업이 있는지 확인하세요 . Copilot이 아직 흐름에 추가하지 않은 경우 흐름에 추가해야 할 수도 있습니다.
+![power automate](Images/power-automate-copilot-18.png)
+
+19. 조건의 True 및 False 분기 모두에서 Dataverse의 행 업데이트 작업이 있는지 확인하세요 .
+
+![power automate](Images/power-automate-copilot-19.png)
+
+Copilot이 아직 흐름에 추가하지 않은 경우 흐름에 추가해야 할 수도 있습니다.
+
+![power automate](Images/power-automate-copilot-19-2.png)
 
 20. 테이블 이름 드롭다운 에서 Real Estate Shows(부동산 표시)를 검색하여 선택합니다 .
+
+![power automate](Images/power-automate-copilot-20.png)
 
 21. 행 ID 필드를 선택한 다음 동적 콘텐츠 창 에서 부동산 표시 고유 식별자 필드를 선택합니다 .
 
