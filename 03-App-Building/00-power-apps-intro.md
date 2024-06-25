@@ -17,9 +17,9 @@
 ## 01. Excel의 데이터를 사용하여 부동산 솔루션용 Power Apps 캔버스 앱 구축
 40분, 모듈, 2개
 
-중요
-- Power Virtual Agents 는 생성 AI에 대한 상당한 투자와 Microsoft Copilot 전반의 향상된 통합 이후, 이제 Microsoft Copilot Studio의 일부 입니다.
-- 문서 및 교육 콘텐츠를 업데이트하는 동안 일부 기사와 스크린샷에서는 Power Virtual Agents를 참조할 수 있습니다.
+> 중요
+> - Power Virtual Agents 는 생성 AI에 대한 상당한 투자와 Microsoft Copilot 전반의 향상된 통합 이후, 이제 Microsoft Copilot Studio의 일부 입니다.
+> - 문서 및 교육 콘텐츠를 업데이트하는 동안 일부 기사와 스크린샷에서는 Power Virtual Agents를 참조할 수 있습니다.
 
 이 모듈에서는 부동산 회사와 그 운영을 중심으로 하는 Microsoft Power Platform 솔루션 생성을 시작합니다. 첫 번째 단계는 부동산 중개인이 자산을 관리하는데 사용하는 Power Apps 캔버스 앱으로 시작하는 것입니다. 이 앱의 데이터는 Excel 파일에 저장되며 AI Copilot Excel to App 기능을 사용하여 앱을 만들 수 있습니다. 또한 Power Apps Ideas를 사용하여 수식 작성 환경을 생성하고 가속화하여 앱에 더 많은 기능을 추가하게 됩니다.
 
