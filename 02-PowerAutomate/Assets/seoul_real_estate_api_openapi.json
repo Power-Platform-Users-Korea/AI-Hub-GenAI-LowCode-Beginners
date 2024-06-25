@@ -1,0 +1,169 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "서울시 부동산 실거래가 정보 API",
+    "description": "2024년 서울AI 허브-마이크로소프트(MS) 공동교육을 위한 교육용 API입니다. 이 API는 서울시 부동산 실거래가 정보를 가져오는 기능을 제공합니다. Azure Functions를 기반으로 하여 사용자가 지정한 건물의 실거래가 데이터를 검색하고 반환합니다. API 키를 사용하여 인증하며, 쿼리 매개변수로 법정동 코드와 건물 이름을 입력받아 데이터를 조회합니다.",
+    "version": "1.0.0"
+  },
+  "host": "hysis-notice-compare.azurewebsites.net",
+  "basePath": "/api",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/seoulrealestatetransactionsfunction": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "성공적인 응답",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/RealEstateTransaction"
+              }
+            }
+          }
+        },
+        "summary": "서울시 부동산 거래 정보 조회",
+        "description": "이 작업은 특정 건물의 부동산 거래 데이터를 조회합니다.",
+        "operationId": "getRealEstateTransactions",
+        "parameters": [
+          {
+            "name": "bjdong_cd",
+            "in": "query",
+            "required": true,
+            "type": "number",
+            "description": "법정동 코드 (5자리)",
+            "default": 10800
+          },
+          {
+            "name": "bldg_nm",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "건물명",
+            "default": "삼성파크타워"
+          },
+          {
+            "name": "x-api-key",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "API 키",
+            "default": "Quxh0wbaFcK3aTQW5VTWQGKxac3kbv-8bAISsSlOEJQ0AzFu1URfsA=="
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "RealEstateTransaction": {
+      "type": "object",
+      "properties": {
+        "ACC_YEAR": {
+          "type": "string",
+          "description": "접수연도 (4자리)"
+        },
+        "SGG_CD": {
+          "type": "string",
+          "description": "자치구코드 (5자리)"
+        },
+        "SGG_NM": {
+          "type": "string",
+          "description": "자치구명"
+        },
+        "BJDONG_CD": {
+          "type": "string",
+          "description": "법정동코드 (5자리)"
+        },
+        "BJDONG_NM": {
+          "type": "string",
+          "description": "법정동명"
+        },
+        "LAND_GBN": {
+          "type": "string",
+          "description": "지번구분 (1: 대지, 2: 산, 3: 블럭)"
+        },
+        "LAND_GBN_NM": {
+          "type": "string",
+          "description": "지번구분명"
+        },
+        "BONBEON": {
+          "type": "string",
+          "description": "본번 (4자리)"
+        },
+        "BUBEON": {
+          "type": "string",
+          "description": "부번 (4자리)"
+        },
+        "BLDG_NM": {
+          "type": "string",
+          "description": "건물명"
+        },
+        "DEAL_YMD": {
+          "type": "string",
+          "description": "계약일자 (YYYYMMDD)"
+        },
+        "OBJ_AMT": {
+          "type": "string",
+          "description": "물건금액 (만원)"
+        },
+        "BLDG_AREA": {
+          "type": "number",
+          "description": "건물면적 (㎡)",
+          "title": "",
+          "format": "float"
+        },
+        "TOT_AREA": {
+          "type": "number",
+          "description": "토지면적 (㎡)"
+        },
+        "FLOOR": {
+          "type": "number",
+          "description": "층"
+        },
+        "RIGHT_GBN": {
+          "type": "string",
+          "description": "권리구분"
+        },
+        "CNTL_YMD": {
+          "type": "string",
+          "description": "취소일자 (YYYYMMDD)"
+        },
+        "BUILD_YEAR": {
+          "type": "string",
+          "description": "건축년도 (YYYY)"
+        },
+        "HOUSE_TYPE": {
+          "type": "string",
+          "description": "건물용도"
+        },
+        "REQ_GBN": {
+          "type": "string",
+          "description": "신고구분"
+        },
+        "RDEALER_LAWDNM": {
+          "type": "string",
+          "description": "신고한 개업공인중개사 시군구명"
+        }
+      }
+    }
+  },
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {
+    "API Key": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "x-api-key"
+    }
+  },
+  "security": [
+    {
+      "API Key": []
+    }
+  ],
+  "tags": []
+}
