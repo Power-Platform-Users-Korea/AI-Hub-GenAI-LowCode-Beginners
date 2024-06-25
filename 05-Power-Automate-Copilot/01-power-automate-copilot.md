@@ -70,8 +70,9 @@ real estate showings을 관리하는 앱을 구축합니다.
 
 시작 및 승인 대기 작업에 대한 제목 매개변수로 "부동산 표시에 대한 새 요청"을 추가합니다.​
 
+```
 Add "New Request for Real Estate Showing" as the Title parameter for the Start and wait for an approval action
-
+```
 ​
 Copilot이 메시지를 처리하는데 몇 초 정도 걸립니다. 처리가 완료되면 Title 매개변수가 프롬프트 텍스트로 채워집니다.
 
@@ -79,18 +80,21 @@ Copilot이 메시지를 처리하는데 몇 초 정도 걸립니다. 처리가 �
 
 11. 세부정보 매개변수에 다음 텍스트를 입력합니다.
 
+```
+A new request for a real estate showing has been created. Please review the details below and approve or reject the request:   
+Property:    
+Client:    
+Client Email:    
+Date: Time:   
+```
+```
 ​부동산 보기에 대한 새로운 요청이 생성되었습니다. 아래 세부정보를 검토한 후 요청을 승인하거나 거부하세요.   
 주소:   
 의뢰인:   
 의뢰인 이메일:   
 날짜:   
 시간:   
-
-A new request for a real estate showing has been created. Please review the details below and approve or reject the request:   
-Property:    
-Client:    
-Client Email:    
-Date: Time:   
+```
 
 12. 세부 정보 매개 변수의 속성 : 옆에 커서를 놓은 다음 번개 아이콘을 선택하여 동적 콘텐츠 창을 엽니다.
 
@@ -139,9 +143,12 @@ Microsoft Dataverse에서 테이블을 생성할 때마다 테이블과 동일�
 
 29. Copilot 채팅 창에서 다음 프롬프트를 입력한 후 제출하십시오.
 
-​조건의 두 분기에 대한 "행 업데이트" 작업 아래에 새로운 "이메일 보내기(V2)" 작업을 추가합니다. 
-
+```
 Under the "Update a row" action for both branches in the condition, add a new "Send an email (V2)" action
+```
+```
+​조건의 두 분기에 대한 "행 업데이트" 작업 아래에 새로운 "이메일 보내기(V2)" 작업을 추가합니다. 
+```
 
 ​몇 초 후에 Copilot은 다음 이미지와 같이 자신이 수행한 작업을 설명해야 합니다.
 
@@ -153,23 +160,32 @@ Under the "Update a row" action for both branches in the condition, add a new "S
 
 32. 제목 필드 의 경우, Copilot 채팅 창에 다음 텍스트를 입력한 후 키보드의 Enter 키를 누릅니다.
 
-​
-이메일 보내기 작업의 제목 매개변수로 "부동산 표시 요청이 승인되었습니다"를 추가합니다.
-
+```
 Add "Your request for a real estate showing has been approved" as the Subject parameter for the Send an email action
+```
+​
++ 이메일 보내기 작업의 제목 매개변수로 "부동산 표시 요청이 승인되었습니다"를 추가합니다.
 
 제목 필드 는 프롬프트 텍스트로 채워져야 합니다.
 
 33. 본문 필드 의 경우 Copilot 채팅 창에 다음 텍스트를 입력한 후 키보드의 Enter 키를 누릅니다.
 
-이메일 보내기 작업의 본문 매개변수로서 "좋은 하루 되세요 - 부동산 공개 요청이 승인되었습니다. 자세한 내용은 아래를 참조하세요."를 추가하세요.
-
+```
 Add "Good day - Your request for a real estate showing has been approved. Please see below for details." as the Body parameter for the Send an email action
+```
 
++ 이메일 보내기 작업의 본문 매개변수로서 "좋은 하루 되세요 - 부동산 공개 요청이 승인되었습니다. 자세한 내용은 아래를 참조하세요."를 추가하세요.
 
 본문 필드 는 프롬프트 텍스트로 채워져야 합니다.
 
 34. 본문 텍스트 뒤에 다음 내용을 입력합니다 .
+
+```
+Property:
+Agent Name:
+Showing Date:
+Showing Time:
+```
 
 주소:   
 Agent 이름:   
@@ -187,21 +203,33 @@ Agent 이름:
 
 ​38. 제목 필드 의 경우 Copilot 채팅 창에 다음 내용을 입력한 후 키보드의 Enter 키를 누릅니다.
 
-​이메일 보내기 작업의 제목 매개변수로 "부동산 표시 요청이 거부되었습니다"를 추가하세요.
-
+```
 Add "Your request for a real estate showing has been rejected" as the Subject parameter for the Send an email action
+```
+
+​+ 이메일 보내기 작업의 제목 매개변수로 "부동산 표시 요청이 거부되었습니다"를 추가하세요.
 
 Copilot은 요청한 내용을 항상 이해하지 못하므로 기대한 내용을 항상 정확하게 얻지 못할 수도 있으므로 "실행 취소"를 선택하거나 수동으로 흐름에 추가할 수 있습니다. Copilot은 사용자를 지원하도록 설계된 공동 작업 도구이지만, Copilot은 사용자가 지시한 내용을 항상 올바르게 해석하지 못할 수도 있습니다.
 
 39. 본문 필드 의 경우 Copilot 채팅 창에 다음 텍스트를 입력한 후 키보드의 Enter 키를 누릅니다.
 
-​이메일 보내기 작업의 본문 매개변수로 "안녕하세요 - 부동산 공개 요청이 거부되었습니다. 자세한 내용은 아래를 참조하세요."를 추가하세요.
-
+```
 Add "Good day - Your request for a real estate showing has been rejected. Please see below for details." as the Body parameter for the Send an email action
+```
+
++ ​이메일 보내기 작업의 본문 매개변수로 "안녕하세요 - 부동산 공개 요청이 거부되었습니다. 자세한 내용은 아래를 참조하세요."를 추가하세요.
+
 
 어떤 이유로 Copilot이 이를 놓친 경우 실행 취소하고 다시 시도하거나 수동으로 조정할 수 있습니다.
 
 40. 본문 텍스트 뒤에 다음 내용을 입력합니다 .
+
+```
+Property:
+Agent Name:
+Showing Date:
+Showing Time:
+```
 
 주소:   
 Agent 이름:   
@@ -252,6 +280,10 @@ Agent 이름:
 51. 승인 을 선택합니다 .
 
 ​52. 설명을 추가한 다음 제출을 선택합니다 .
+
+```
+Sure thing. Can't wait to see you there.
+```
 
 흐름은 계속 실행됩니다. 행을 업데이트하고 요청자에게 이메일을 보냅니다. 요청자에게 전송되는 이메일은 다음 이미지와 유사합니다.
 
