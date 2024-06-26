@@ -27,6 +27,8 @@
 
 3. Add new 선택
    - 일반적으로 OneDrive 인터페이스 상단 근처에 있습니다.
+![image](https://github.com/Power-Platform-Users-Korea/AI-Hub-GenAI-LowCode-Beginners/assets/123848060/b7b027c3-fb55-4b53-85e0-e121ed1537f0)
+
 
 4. 파일 업로드
    - 이 연습에 사용할 Excel 파일을 업로드합니다.해당 파일은 [여기서](https://github.com/Power-Platform-Users-Korea/AI-Hub-GenAI-LowCode-Beginners/blob/a9ecda93146c9901d525e2999f9698b9eeb76401/05-Power-Automate-Copilot/mail_list.xlsx) 다운로드 하시면 됩니다.
