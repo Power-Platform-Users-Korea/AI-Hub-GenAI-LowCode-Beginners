@@ -151,6 +151,10 @@ Date: Time:
 
 18. 조건에 대해 같음을 선택한 다음, 값 에 대해 Approve(승인)을 입력합니다.
 
+```
+Approve
+```
+
 ![power automate](Images/power-automate-copilot-18.png)
 
 19. 조건의 True 및 False 분기 모두에서 Dataverse의 행 업데이트 작업이 있는지 확인하세요 .
