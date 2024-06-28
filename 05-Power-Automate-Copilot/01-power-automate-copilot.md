@@ -18,7 +18,7 @@ Power Automate의 Copilot을 사용하면 흐름을 생성하는 동안 개방�
 ## 2. 연습 - Power Automate에서 Copilot을 사용하여 승인 흐름 만들기
 16분
 
-이 연습에서는 Power Automate의 Copilot을 사용하여 부동산 표시에 대한 승인 프로세스를 자동화하는 자동화를 만듭니다. Copilot을 사용하여 새 매물이 요청될 때 부동산 중개인에게 이메일을 보내는 흐름을 만듭니다. 그런 다음 상담원은 이메일 내에서 표시 요청을 승인하거나 거부할 수 있습니다.
+이 연습에서는 Power Automate의 Copilot을 사용하여 부동산 표시에 대한 승인 프로세스를 자동화하는 흐름을 만듭니다. Copilot을 사용하여 새 매물이 요청될 때 부동산 중개인에게 이메일을 보내는 흐름을 만듭니다. 그런 다음 상담원은 이메일 내에서 표시 요청을 승인하거나 거부할 수 있습니다.
 
 Copilot을 사용하여 흐름을 만들려면 다음 단계를 따르세요.
 
@@ -133,6 +133,7 @@ Date: Time:
 ![power automate](Images/power-automate-copilot-14.png)
 
 이제 주소 동적 콘텐츠 필드가 세부 정보 매개변수 에 추가되었습니다 .   
+
 ​
 15. 클라이언트 , 클라이언트 이메일 , 날짜 및 시간 필드 에 대해 동일한 단계를 완료합니다 .
 
@@ -150,6 +151,10 @@ Date: Time:
 ![power automate](Images/power-automate-copilot-17.png)
 
 18. 조건에 대해 같음을 선택한 다음, 값 에 대해 Approve(승인)을 입력합니다.
+
+```
+Approve
+```
 
 ![power automate](Images/power-automate-copilot-18.png)
 
