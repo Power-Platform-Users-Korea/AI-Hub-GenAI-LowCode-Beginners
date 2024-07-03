@@ -128,16 +128,16 @@ Add 3 textlabels to QRScreen1 in order to show Title, Email, Phone from a linked
 
 추가한 TextLabel을 각각 'lblTitle', 'lblEmail', 'lblPhone'으로 바꿔주고 위치를 옮겨줍니다.  추가로 해당 Label 들의 값을 보여줄 Textlabel을 3개 더 추가하고, 각각 'vTitle', 'vEmail', 'vPhone'으로 바꿔주고 위치를 옮겨줍니다.  
 
-- 'vTitle'은 'Text' 속성(Property)를 'scannedTitle'로 바꿔주고,
-- 'vEmail'은 'Text' 속성(Property)를 'First(scannedRecord).email'로 바꿔주고,
-- 'vPhone'은 'Text' 속성(Property)를 'First(scannedRecord).phone'으로 바꿔주면 됩니다.  
+- 'vTitle'은 'Text' 속성(Property)를 ```scannedTitle```로 바꿔주고,
+- 'vEmail'은 'Text' 속성(Property)를 ```First(scannedRecord).email```로 바꿔주고,
+- 'vPhone'은 'Text' 속성(Property)를 ```First(scannedRecord).phone```으로 바꿔주면 됩니다.  
 
 ![Textlabel 값 바꾸기](Images/power-apps-setting-labels.png)  
 
 #### 4. 출석여부 확인하기
 다음으로 출석여부를 확인하는 'isPresented'라는 컬럼의 값을 가져와서 출석여부를 확인하는 Toggle을 추가하도록 하겠습니다.  
 
-위 'Title', 'Email', 'Phone' Label 아래에 Toggle을 추가하고, 'Default' 속성(Property)을 'First(scannedRecord).isPresented'로 바꿔주면 됩니다. 토글이 어떤 내용인지 모를 수 있으니, 토급 앞에 '출석여부'라는 Label을 추가하도록 하겠습니다.  
+위 'Title', 'Email', 'Phone' Label 아래에 Toggle을 추가하고, 'Default' 속성(Property)을 ```First(scannedRecord).isPresented```로 바꿔주면 됩니다. 토글이 어떤 내용인지 모를 수 있으니, 토급 앞에 '출석여부'라는 Label을 추가하도록 하겠습니다.  
 
 ![출석여부 토글 추가](Images/power-apps-add-toggle-for-attendance-check.png)  
 
