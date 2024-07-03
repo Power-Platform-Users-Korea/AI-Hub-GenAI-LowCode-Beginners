@@ -134,6 +134,10 @@ Add 3 textlabels to QRScreen1 in order to show Title, Email, Phone from a linked
 
 ![Textlabel 값 바꾸기](Images/power-apps-setting-labels.png)  
 
-다음으로 출석여부를 확인하는 'isPresented'라는 컬럼의 값을 가져와서 출석여부를 확인하는 Toggle을 추가하도록 하겠습니다.
+#### 4. 출석여부 확인하기
+다음으로 출석여부를 확인하는 'isPresented'라는 컬럼의 값을 가져와서 출석여부를 확인하는 Toggle을 추가하도록 하겠습니다.  
 
+위 'Title', 'Email', 'Phone' Label 아래에 Toggle을 추가하고, 'Default' 속성(Property)을 'First(scannedRecord).isPresented'로 바꿔주면 됩니다. 토글이 어떤 내용인지 모를 수 있으니, 토급 앞에 '출석여부'라는 Label을 추가하도록 하겠습니다.  
+
+![출석여부 토글 추가](Images/power-apps-add-toggle-for-attendance-check.png)  
 
