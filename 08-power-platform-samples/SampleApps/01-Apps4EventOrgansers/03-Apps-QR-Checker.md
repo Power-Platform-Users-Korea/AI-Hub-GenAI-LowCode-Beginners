@@ -24,4 +24,9 @@
 ### 3. 생성한 모바일 앱 편집하기
 이 앱을 기초로 새로 스크린을 두 개 정도 추가해보도록 하겠습니다.  
 홈으로 사용할 스크린과 QR 코드 확인용 스크린입니다.  
-![새로 스크린 추가하기](Images/power-apps-add-screen.png)
+추가한 두 개의 스크린을 각각 'HomeScreen1'과 'QRScreen1'으로 바꿔줍니다. 이 때 이름은 기억하기 쉽게 하셔도 됩니다.  
+
+그런 다음 'HomeScreen1'을 맨 위로 올려보냅니다.
+![새로 스크린 추가하기](Images/power-apps-add-move-screen.png)
+>스크린 추가, 이름변경 및 이동 전체 다시 보기
+>![새로 스크린 추가 및 이동하기 전체 다시 보기](Images/power-apps-add-move-screen.gif)
