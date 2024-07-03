@@ -73,3 +73,67 @@ add 2 buttons to HomeScreen1 in order to navigate to BrowseScreen1 and QRScreen1
 그런 다음 업로드한 로고를 끌어서 'HomeScreen1'의 빈곳에 적당히 위치시킵니다.  
 ![로고 파일 위칙시키기](Images/power-apps-locate-logo.gif)  
 
+### 6. QRScreen1 꾸미기
+'QRScreen1'은 QR 코드를 확인하는 화면으로 만들어 보겠습니다.  
+QR 코드를 확인하는 화면은 QR 코드를 스캔하고 확인하는 화면이므로,
+- 화면에 Barcode Reader를 넣고,
+- QR 코드를 스캔하는 기능을 넣어보겠습니다.
+- QR 코드를 스캔하면 해당 QR 코드에 해당하는 데이터를 보여주는 기능을 넣어보겠습니다.
+- 그리고 출석한 사람의 이름으로 출석을 확인하는 기능을 넣어보겠습니다.
+
+#### 1. Barcode Reader 넣기
+Barcode Reader는 'Media'에서 찾아 추가할 수 있습니다.  
+![Barcode Reader 찾기](Images/power-apps-add-barcode-reader.gif)  
+
+Barcode Reader를 추가하고 난 후, 전면 카메라를 우선 사용하도록 바꿔줍니다. 후면 카메라 사용이 우선이기 때문입니다. 필요에 따라서는 이 부분은 생략하셔도 됩니다.  
+왼쪽 상단에서 아래 이미지와 같이 'PreferFrontCamera'를 'true'로 바꿔주시면 됩니다.  
+![Barcode Reader 전면카메라 설정](Images/power-apps-prefer-front-camera.gif)  
+
+#### 2. Barcode Reader 설정
+앞서 설정한 'Property'에서 'OnScan'을 선택하고 'OnScan' 모드에서 아래 코드를 입력합니다. 바코드가 너무 커서 좀 줄여야 할 듯 하네요.  
+
+```power apps
+Set(
+    scannedData,
+    First(BarcodeReader1.Barcodes).Value
+);
+Set(
+    scannedTitle,
+    First(Split(scannedData, "|")).Value
+);
+ClearCollect(
+    scannedRecord,
+    Filter(
+        'Event Attendee List',
+        Title = scannedTitle
+    )
+);
+```
+위 코드는 바코드를 스캔하면 해당 바코드에 해당하는 데이터를 'scannedData'에 저장하고, 다시 그 데이터를 '|'로 나누어서 처음에 위치한 이름(Title)을 'scannedTitle'에 저장합니다. 그리고 'Event Attendee List'에서 'scannedTitle'에 해당하는 데이터를 'scannedRecord'라는 Collection에 임시로 저장합니다.
+
+![Barcode Reader OnScan 코드 입력](Images/power-apps-barcode-reader-onscan.gif)  
+
+'scannedRecord'라는 Collection은 왼쪽 변수(Variable)에서 확인하실 수 있습니다.  
+![scannedRecord Collection 확인](Images/power-apps-check-collection.png)  
+
+#### 3. 스캔한 데이터 보여주기
+스캔한 데이터를 화면에 보여주기 위해서 'scannedRecord' Collection을 이용하여 화면에 보여주는 기능을 넣어보겠습니다. 참고로 'scannedRecord' Collection은 'Title', 'Email', 'Phone'이라는 필드를 가지고 있습니다. 또한 오류를 체크하는 기능은 넣지 않았으므로, 이 부분은 생략하셔도 됩니다.  
+
+'scannedRecord' Collection의 'Title', 'Email', 'Phone'을 보여주는 Label을 각각 넣습니다.  한꺼번에 실행하기 위해서 코파일럿을 사용하겠습니다. 프롬프트는 아래와 같이 작성했습니다.  
+
+```prompt
+Add 3 textlabels to QRScreen1 in order to show Title, Email, Phone from a linked sharepoint list.
+```
+![코파일럿 프롬프트 입력](Images/power-apps-add-textlabels-using-copilot.png)  
+
+추가한 TextLabel을 각각 'lblTitle', 'lblEmail', 'lblPhone'으로 바꿔주고 위치를 옮겨줍니다.  추가로 해당 Label 들의 값을 보여줄 Textlabel을 3개 더 추가하고, 각각 'vTitle', 'vEmail', 'vPhone'으로 바꿔주고 위치를 옮겨줍니다.  
+
+- 'vTitle'은 'Text' 속성(Property)를 'scannedTitle'로 바꿔주고,
+- 'vEmail'은 'Text' 속성(Property)를 'First(scannedRecord).email'로 바꿔주고,
+- 'vPhone'은 'Text' 속성(Property)를 'First(scannedRecord).phone'으로 바꿔주면 됩니다.  
+
+![Textlabel 값 바꾸기](Images/power-apps-setting-labels.png)  
+
+다음으로 출석여부를 확인하는 'isPresented'라는 컬럼의 값을 가져와서 출석여부를 확인하는 Toggle을 추가하도록 하겠습니다.
+
+
