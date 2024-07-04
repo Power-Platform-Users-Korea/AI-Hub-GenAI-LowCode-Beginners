@@ -141,3 +141,52 @@ Add 3 textlabels to QRScreen1 in order to show Title, Email, Phone from a linked
 
 ![출석여부 토글 추가](Images/power-apps-add-toggle-for-attendance-check.png)  
 
+#### 5. 참석자 확인용 ID 추가
+쉐어포인트 목록(SharePoint List)는 자동으로 보이지 않는 ID 컬럼을 생성해줍니다.  
+
+참석자 이름이 같을 경우 문제가 될 수 있으니 우리는 쉐어포인트 목록의 ID를 활용하려고 합니다. ID 컬럼을 확인하는 방법은 쉐어포인트 목록의 설정에서 가능한데, 기회가 닿으면 따로 설명을 하도록 하겠습니다.  
+
+참석자 확인용 ID를 가져올 TextLabel을 추가하고, 이름을 'vID'라고 바꿔보겠습니다.  
+그리고 ```Text``` 속성을 ```First(scannedRecord).ID```로 바꿔주면 해당 값을 불러옵니다. 이 부분을 굳이 드러내고 싶지 않으시다면 ```DisplayMode```를 ```Disabled```로 바꿔주시면 됩니다.
+
+![QR 코드 소지한 참석자 ID 값 저장을 위해 Text Label 추가](Images/power-apps-add-textlabel4ID.png)  
+
+#### 6. QR 코드 소지인 ID로 출석상태 업데이트
+이제 이름이 같아서 혹시나 생길 오류를 해결하기 위해서 ```vID```에 해당 참가자의 ID 값을 표시했으므로 해당 값을 기초로 참가자의 출석상태를 변경해주면 됩니다.  
+
+아래 그림과 같이 ```Button```을 추가하고 ```출석확인```으로 표시 이름을 바꾼 뒤에 다시 버튼명칭을 ```btnAttendanceCheck```로 바꿔줍니다.  
+![출석체크를 위해 '출석확인'이란 버튼을 추가](Images/power-apps-add-button-attendance-update.png)
+
+해당 버튼의 ```OnSelect``` 속성에 있는 함수를 아래와 같이 업데이트 해줍니다.  
+
+```power apps
+Patch('Event Attendee List', LookUp('Event Attendee List', ID = vID.Text), {isPresented:Toggle1.Value})
+```
+
+!['출석확인' 속성 변경](Images/power-apps-button-property-update.png)  
+
+```Patch```라는 함수를 사용해서 ```vID```에 있는 ```Text``` 값으로 해당하는 사람에 대한 정보를 찾아오면 되는데 ```LookUp```이라는 함수를 사용합니다. 그리고 해당 참가자의 ```isPresented``` 컬럼의 값을 앱에 있는 값으로 업데이트 하겠다는 뜻입니다.  
+
+```출석확인``` 버튼 앞에 노란색 주의 표시가 있는데, 스캔하면 값을 불러 오므로 해당 부분은 경고일 뿐이니 염려하지 않으셔도 됩니다.
+
+#### 7. 신청자 명단으로 이동하는 버튼 추가
+혹시 QR 코드를 가져오지 않았거나 찾지 못하는 분들의 출석확인이 필요할 수 있습니다. 그럴 경우 신청자 명단이 있는 ```BrowseScreen1```으로 이동해서 신청자 이름을 확인한 다음 상세 스크린인 ```DetailScreen1```으로 이동한 다음 ```EditScreen1```에서 상태를 변경할 수 있습니다.  
+
+```Icon```을 하나 추가한 다음 ```Navigate(BrowseScreen1)``` 함수를 사용하면 쉽게 처리가 가능합니다. 그러기 위해서 우선 헤더에 해당하는 요소를 BrowseScreen1에서 복사해온 다음 붙여넣고 아이콘을 추가한 다음 색깔을 흰색으로 바꿔보겠습니다.  
+
+![신청자 명단으로 이동하기 위해 아이콘 추가](Images/power-apps-add-icon.png)]  
+
+아이콘에 ```Navigate(BrowseScreen1)``` 이란 함수를 ```OnSelct```에 추가하는 걸 잊지 않으시기 바랍니다.
+
+### 7. 저장 및 배포(Publish)
+앱이 완성되었으니 저장하고 배포하면 됩니다.  
+
+![앱 저장 및 배포](Images/power-apps-save-publish.gif)
+
+### 8. 실행하기
+해당 앱을 실행하려면 [모바일용 파워앱스 앱](https://powerapps.microsoft.com/ko-kr/downloads/)을 내려받으셔야 합니다.  
+
+직접 내려받으시려면 안드로이드 폰은 [Power Apps - Apps on Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps&hl=en)에서, 아이폰은 [Power Apps on the App Store](https://apps.apple.com/us/app/power-apps/id1047318566)으로 이동하셔서 내려받으시면 됩니다.  
+
+'Power Apps'를 내려받고 해당 앱을 실행할 아이디로 로그인하시면 배포하신 앱을 찾아서 실행하실 수 있습니다.  
+
